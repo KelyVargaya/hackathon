@@ -59,6 +59,7 @@ class FormDiagnostic extends Component {
 						</Col>
 						<Col sm={4}>
 							<FormControl componentClass="select" placeholder="select">
+								{this.}
 								<option value="semanas">semanas</option>
 								<option value="meses">meses</option>
 								<option value='años'>años</option>
