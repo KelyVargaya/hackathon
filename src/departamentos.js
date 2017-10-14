@@ -153,5 +153,218 @@ const departamentos=[
             }
         ]
     },
-
+    {
+        departamento: "Arequipa",
+        provincias:
+        [
+            {
+                provincias:"Arequipa",
+                altura: 55
+            },
+            {
+                provincias:"Camaná",
+                altura: 55
+            },
+            {
+                provincias: "Caravelí",
+                altura: 55
+            },
+            {
+                provincias: "Castilla",
+                altura: 55
+            },
+            {
+                provincias: "Caylloma",
+                altura: 55
+            },
+            {
+                provincias: "Condesuyos",
+                altura: 55
+            },
+            {
+                provincias: "Islay",
+                altura: 55
+            },
+            {
+                provincias: "La Unión",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Ayacucho",
+        provincias:
+        [
+            {
+                provincias:"Huamanga",
+                altura: 55
+            },
+            {
+                provincias:"Cangallo",
+                altura: 55
+            },
+            {
+                provincias: "Huancasancos",
+                altura: 55
+            },
+            {
+                provincias: "Huanta",
+                altura: 55
+            },
+            {
+                provincias: "La Mar",
+                altura: 55
+            },
+            {
+                provincias: "Lucanas",
+                altura: 55
+            },
+            {
+                provincias: "Parinacochas",
+                altura: 55
+            },
+            {
+                provincias: "Paúcar del Sara Sara",
+                altura: 55
+            },
+            {
+                provincias: "Sucre",
+                altura: 55
+            },
+            {
+                provincias: "Víctor Fajardo",
+                altura: 55
+            },
+            {
+                provincias: "Vilcashuamán",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Cajamarca",
+        provincias:
+        [
+            {
+                provincias:"Cajamarca",
+                altura: 55
+            },
+            {
+                provincias:"Cajabamba",
+                altura: 55
+            },
+            {
+                provincias: "Celendín",
+                altura: 55
+            },
+            {
+                provincias: "Chota",
+                altura: 55
+            },
+            {
+                provincias: "Contumazá",
+                altura: 55
+            },
+            {
+                provincias: "Cutervo",
+                altura: 55
+            },
+            {
+                provincias: "Hualgayoc",
+                altura: 55
+            },
+            {
+                provincias: "Jaén",
+                altura: 55
+            },
+            {
+                provincias: "San Ignacio",
+                altura: 55
+            },
+            {
+                provincias: "San Marcos",
+                altura: 55
+            },
+            {
+                provincias: "San Miguel",
+                altura: 55
+            },
+            {
+                provincias: "San Pablo",
+                altura: 55
+            },
+            {
+                provincias: "Santa Cruz",
+                altura: 55
+            },
+        ]
+    },
+    {
+        departamento: "Callao",
+        provincias:
+        [
+            {
+                provincias:"Callao",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Cusco",
+        provincias:
+        [
+            {
+                provincias:"Cusco",
+                altura: 55
+            },
+            {
+                provincias:"Acomayo",
+                altura: 55
+            },
+            {
+                provincias:"Anta",
+                altura: 55
+            },
+            {
+                provincias:"Calca",
+                altura: 55
+            },
+            {
+                provincias:"Canas",
+                altura: 55
+            },
+            {
+                provincias:"Canchis",
+                altura: 55
+            },
+            {
+                provincias:"Chumbivilcas",
+                altura: 55
+            },
+            {
+                provincias:"Espinar",
+                altura: 55
+            },
+            {
+                provincias:"La Convención",
+                altura: 55
+            },
+            {
+                provincias:"Paruro",
+                altura: 55
+            },
+            {
+                provincias:"Paucartambo",
+                altura: 55
+            },
+            {
+                provincias:"Quispicanchi",
+                altura: 55
+            },
+            {
+                provincias:"Urubamba",
+                altura: 55
+            }
+        ]
+    },
 ];

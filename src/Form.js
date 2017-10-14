@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './form.css';
-import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Checkbox, Button } from 'react-bootstrap';
+import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio} from 'react-bootstrap';
 
 
 class FormDiagnostic extends Component {
@@ -59,10 +59,9 @@ class FormDiagnostic extends Component {
 						</Col>
 						<Col sm={4}>
 							<FormControl componentClass="select" placeholder="select">
-								{this.}
-								<option value="semanas">semanas</option>
-								<option value="meses">meses</option>
-								<option value='años'>años</option>
+								<option value="semanas">Ancash</option>
+								<option value="meses">Apurimac</option>
+								<option value='años'>Amazonas</option>
 							</FormControl>
 						</Col>
 					</FormGroup>
@@ -72,10 +71,8 @@ class FormDiagnostic extends Component {
 							<ControlLabel>¿Su peso fue adecuado al nacer?</ControlLabel>
 						</Col>
 						<Col sm={6}>
-							<FormControl componentClass="select" placeholder="select">
-								<option value="SI">SI</option>
-								<option value="NO">NO</option>
-							</FormControl>
+							<Radio name='radioGroup' value='SI' inline>SI</Radio>
+							<Radio name='radioGroup' value='NO' inline>NO</Radio>
 						</Col>
 					</FormGroup>
 
@@ -84,10 +81,8 @@ class FormDiagnostic extends Component {
 							<ControlLabel>¿Su naciemiento fue prematuro?</ControlLabel>
 						</Col>
 						<Col sm={6}>
-							<FormControl componentClass="select" placeholder="select">
-								<option value="SI">SI</option>
-								<option value="NO">NO</option>
-							</FormControl>
+							<Radio name='radioGroup' value='SI' inline>SI</Radio>
+							<Radio name='radioGroup' value='NO' inline>NO</Radio>
 						</Col>
 					</FormGroup>
 
