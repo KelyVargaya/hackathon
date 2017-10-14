@@ -3,7 +3,7 @@ function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso) {
     let edad_semanas = null;
     switch (tipoEdad) {
         case 'semanas':
-            if(prematuro){
+            if(prematuro && edad < 9){
                 edad_semanas = edad;
             } else {
                 edad=edad/4;
@@ -27,16 +27,16 @@ function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso) {
         if (edad < 2) {//meses
             resultado = hemoglobina < 13.5;
         } else if (edad >= 2 && edad < 6) {
-            resultado = hemoglobina <= 10;
+            resultado = hemoglobina < 9.5;
         } else if (edad >= 6 && edad <= 60) {
             resultado = hemoglobina < 11;
 
         }
     }
     diagnostico = resultado ? 'anemia' : 'sin anemia';
-    console.log(diagnostico);
+    return diagnostico;
+    //console.log(diagnostico);
 }
 
-//diagnostico();
 
 export default diagnostico;
