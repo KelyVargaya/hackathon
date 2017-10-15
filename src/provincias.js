@@ -369,159 +369,159 @@ const departamentos = [
 		]
 	},
 	{
-		departamento: "Huancavelica",
+		departamento: "HUANCAVELICA",
 		provincias:
 		[
 			{
-				provincias: "Huancavelica",
-				altura: 55
+				provincias: "HUANCAVELICA",
+				altura: 4035
 			},
 			{
-				provincias: "Acobamba",
-				altura: 55
+				provincias: "ACOBAMBA",
+				altura: 3578
 			},
 			{
-				provincias: "Angaraes",
-				altura: 55
+				provincias: "ANGARAES",
+				altura: 3823
 			},
 			{
-				provincias: "Castrovirreyna",
-				altura: 55
+				provincias: "CASTROVIRREYNA",
+				altura: 3675
 			},
 			{
-				provincias: "Churcampa",
-				altura: 55
+				provincias: "CHURCAMPA",
+				altura: 3355
 			},
 			{
-				provincias: "Huaytará",
-				altura: 55
+				provincias: "HUAYTARA",
+				altura: 3706
 			},
 			{
-				provincias: "Tayacaja",
-				altura: 55
+				provincias: "TAYACAJA",
+				altura: 3234
 			}
 		]
 	},
 	{
-		departamento: "Huánuco",
+		departamento: "HUANUCO",
 		provincias:
 		[
 			{
-				provincias: "Huánuco",
-				altura: 55
+				provincias: "HUANUCO",
+				altura: 3018
 			},
 			{
-				provincias: "Ambo",
-				altura: 55
+				provincias: "AMBO",
+				altura: 3233
 			},
 			{
-				provincias: "Dos de Mayo",
-				altura: 55
+				provincias: "DOS DE MAYO",
+				altura: 3696
 			},
 			{
-				provincias: "Huacaybamba",
-				altura: 55
+				provincias: "HUACAYBAMBA",
+				altura: 3039
 			},
 			{
-				provincias: "Huamalíes",
-				altura: 55
+				provincias: "HUAMALIES",
+				altura: 3374
+            },
+            {
+				provincias: "LAURICOCHA",
+				altura: 3991
 			},
 			{
-				provincias: "Leoncio Prado",
-				altura: 55
+				provincias: "LEONCIO PRADO",
+				altura: 951
 			},
 			{
-				provincias: "Marañón",
-				altura: 55
+				provincias: "MARAÑON",
+				altura: 2588
 			},
 			{
-				provincias: "Pachitea",
-				altura: 55
+				provincias: "PACHITEA",
+				altura: 2788
 			},
 			{
-				provincias: "Puerto Inca",
-				altura: 55
+				provincias: "PUERTO INCA",
+				altura: 301
 			},
 			{
-				provincias: "Lauricocha",
-				altura: 55
-			},
-			{
-				provincias: "Yariwilca",
-				altura: 55
+				provincias: "YAROWILCA",
+				altura: 3691
 			}
 		]
 	},
 	{
-		departamento: "Ica",
+		departamento: "ICA",
 		provincias:
 		[
 			{
-				provincias: "Ica",
-				altura: 55
+				provincias: "ICA",
+				altura: 497
 			},
 			{
-				provincias: "Chincha",
-				altura: 55
+				provincias: "CHINCHA",
+				altura: 1371
 			},
 			{
-				provincias: "Nazca",
-				altura: 55
+				provincias: "NAZCA",
+				altura: 504
 			},
 			{
-				provincias: "Palpa",
-				altura: 55
+				provincias: "PALPA",
+				altura: 1088
 			},
 			{
-				provincias: "Pisco",
-				altura: 55
+				provincias: "PISCO",
+				altura: 495
 			}
 		]
 	},
 	{
-		departamento: "Junín",
+		departamento: "JUNIN",
 		provincias:
 		[
 			{
-				provincias: "Huancayo",
-				altura: 55
+				provincias: "HUANCAYO",
+				altura: 3422
+            },
+            {
+				provincias: "CHANCHAMAYO",
+				altura: 1111
+            },
+            {
+				provincias: "CHUPACA",
+				altura: 3627
 			},
 			{
-				provincias: "Concepción",
-				altura: 55
+				provincias: "CONCEPCION",
+				altura: 3403
 			},
 			{
-				provincias: "Chanchamayo",
-				altura: 55
+				provincias: "JAUJA",
+				altura: 3771
 			},
 			{
-				provincias: "Jauja",
-				altura: 55
+				provincias: "JUNIN",
+				altura: 4032
 			},
 			{
-				provincias: "Junín",
-				altura: 55
+				provincias: "SATIPO",
+				altura: 962
 			},
 			{
-				provincias: "Satipo",
-				altura: 55
+				provincias: "TARMA",
+				altura: 3493
 			},
 			{
-				provincias: "Tarma",
-				altura: 55
-			},
-			{
-				provincias: "Yauli",
-				altura: 55
-			},
-			{
-				provincias: "Chupaca",
-				altura: 55
-			},
+				provincias: "YAULI",
+				altura: 4414
+			}
 		]
 	},
 	{
-		departamento: "La Libertad",
+		departamento: "LA LIBERTAD",
 		provincias:
 		[
 			{
