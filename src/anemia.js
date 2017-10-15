@@ -1,5 +1,5 @@
 function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso) {
-    let prematuro = condicion === 'prematuro';
+    let prematuro = condicion === 'SI';
     let edad_semanas = null;
     switch (tipoEdad) {
         case 'semanas':
@@ -35,7 +35,6 @@ function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso) {
     }
     diagnostico = resultado ? 'anemia' : 'sin anemia';
     return diagnostico;
-    //console.log(diagnostico);
 }
 
 

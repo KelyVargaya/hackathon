@@ -13,19 +13,21 @@ class Model {
             ageType:null,
             hemoglobina:null
         }
+        this.diagnost=null;
 
     }
     subscribe (render) {
 		this.notify = render;
     }
     diag(){
-        diagnostico(this.info.prematuro, this.info.age, this.info.ageType, this.info.hemoglobina, this.info.weight);
+        this.diagnost=diagnostico(this.info.prematuro, this.info.age, this.info.ageType, this.info.hemoglobina, this.info.weight);
     }
     getInfo(){
         Object.keys(this.info).map(a=>{
-            console.log(this.info[a]);
+            console.log(a +': ' +this.info[a]);
         })
         this.diag();
+        console.log(this.diagnost);
         this.notify();
     }
 }

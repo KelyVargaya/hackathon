@@ -4,6 +4,9 @@ import './form.css';
 import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio} from 'react-bootstrap';
 
 const FormDiagnostic = ({model})=>{
+	const pesoA = (e)=>{
+		model.info.pesoAdecuado=e.target.value;
+	}
 	return (
 		<Grid>
 			<Form horizontal>
@@ -43,13 +46,12 @@ const FormDiagnostic = ({model})=>{
 						<FormControl type='number' onChange={e=>model.info.hemoglobina=parseFloat(e.target.value)}/>
 					</Col> gr/dl
 				</FormGroup>
-
 					<FormGroup controlId="formDepartment">
 						<Col sm={4}>
 							<ControlLabel>Procedencia</ControlLabel>
 						</Col>
 						<Col sm={4}>
-							<FormControl componentClass="select" placeholder="select">
+							<FormControl componentClass="select" placeholder="select" onChange={e=>model.info.departamento=e.target.value}>
 								<option value="Ancash">Ancash</option>
 								<option value="Apurimac">Apurimac</option>
 								<option value='Amazonas'>Amazonas</option>
@@ -69,10 +71,8 @@ const FormDiagnostic = ({model})=>{
 							<ControlLabel>¿Su peso fue adecuado al nacer?</ControlLabel>
 						</Col>
 						<Col sm={6}>
-						<FormControl onChange={e=>model.info.pesoAdecuado=e.target.value} >
-							<Radio name='radioGroup' value='SI' inline>SI</Radio>
-							<Radio name='radioGroup' value='NO' inline>NO</Radio>
-							</FormControl>
+							<Radio name='radioGroup1'  value='SI' inline onClick={pesoA}>SI</Radio>
+							<Radio name='radioGroup1'  value='NO' inline onClick={pesoA}>NO</Radio>
 						</Col>
 					</FormGroup>
 
@@ -81,10 +81,8 @@ const FormDiagnostic = ({model})=>{
 							<ControlLabel>¿Su naciemiento fue prematuro?</ControlLabel>
 						</Col>
 						<Col sm={6}>
-						<FormControl  onChange={e=>model.info.prematuro=e.target.value}>
-							<Radio name='radioGroup' value='SI' inline>SI</Radio>
-							<Radio name='radioGroup' value='NO' inline>NO</Radio>
-							</FormControl>
+							<Radio name='radioGroup2' value='SI' inline onClick={e=>model.info.prematuro=e.target.value}>SI</Radio>
+							<Radio name='radioGroup2' value='NO' inline onClick={e=>model.info.prematuro=e.target.value}>NO</Radio>
 						</Col>
 					</FormGroup>
 
