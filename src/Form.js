@@ -4,12 +4,10 @@ import './form.css';
 import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio } from 'react-bootstrap';
 import Result from './result.js';
 import {
-	BrowserRouter,
-	Route,
-	Switch,
-	NavLink,
-	Redirect
+	NavLink
 } from 'react-router-dom'
+import Provincias from './provincias.js';
+
 class FormDiagnostic extends Component {
 	constructor(props) {
 		super(props);
@@ -136,9 +134,10 @@ class FormDiagnostic extends Component {
 									model.info.departamento = e.target.value
 									check();
 								}}>
-									<option value="Ancash">Ancash</option>
-									<option value="Apurimac">Apurimac</option>
-									<option value='Amazonas'>Amazonas</option>
+								{Provincias.map((a,index)=>{
+									return <option key={index} value={a.departamento}>{a.departamento}</option>
+								})}
+		
 								</FormControl>
 							</Col>
 							<Col sm={5} md={5} xs={5}>
