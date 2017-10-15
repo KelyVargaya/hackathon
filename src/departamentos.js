@@ -1,11 +1,96 @@
 const departamentos=[
     {
-        departamento: "Amazonas",
+        departamento: "AMAZONAS",
         provincias:
         [
             {
-                provincias:"Chachapollas",
-                altura: 55
+                provincias:"CHACHAPOLLAS",
+                distritos: [
+                    {
+                        distrito: "CHACHAPOLLAS",
+                        altura: 2243
+                    },
+                    {
+                        distrito: "ASUNCIÓN",
+                        altura: 2756
+                    },
+                    {
+                        distrito: "BALSAS",
+                        altura: 2051
+                    },
+                    {
+                        distrito: "CHETO",
+                        altura: 2447
+                    },
+                    {
+                        distrito: "CHILIQUIN",
+                        altura: 2571
+                    },
+                    {
+                        distrito: "CHUQUIBAMBA",
+                        altura: 2163
+                    },
+                    {
+                        distrito: "GRANADA",
+                        altura: 3014
+                    },
+                    {
+                        distrito: "HUANCAS",
+                        altura: 2081
+                    },
+                    {
+                        distrito: "LA JALCA",
+                        altura: 2666
+                    },
+                    {
+                        distrito: "LEIMEBAMBA",
+                        altura: 3023
+                    },
+                    {
+                        distrito: "LEVANTO",
+                        altura: 2713
+                    },
+                    {
+                        distrito: "MAGDALENA",
+                        altura: 2601
+                    },
+                    {
+                        distrito: "MARISCAL CASTILLA",
+                        altura: 2822
+                    },
+                    {
+                        distrito: "MOLINOPAMPA",
+                        altura: 2570
+                    },
+                    {
+                        distrito: "MONTEVIDEO",
+                        altura: 2562
+                    },
+                    {
+                        distrito: "OLLEROS",
+                        altura: 2630
+                    },
+                    {
+                        distrito: "QUINJALCA",
+                        altura: 2961
+                    },
+                    {
+                        distrito: "SAN FRANCISCO DE DAGUAS",
+                        altura: 2150
+                    },
+                    {
+                        distrito: "SAN ISIDRO DE MAINO",
+                        altura: 2903
+                    },
+                    {
+                        distrito: "SOLOCO",
+                        altura: 2674
+                    },
+                    {
+                        distrito: "SONOCHE",
+                        altura: 2289
+                    }
+                ]
             },
             {
                 provincias:"Bagua",
