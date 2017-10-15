@@ -129,24 +129,60 @@ const departamentos = [
 						altura: 2526
 					},
 					{
-						distrito: "ARAMANGO",
-						altura: 1122
+						distrito: "CHISQUILLA",
+						altura: 2400
 					},
 					{
-						distrito: "COPALLIN",
-						altura: 1058
+						distrito: "CHURUJA",
+						altura: 1970
 					},
 					{
-						distrito: "EL PARCO",
-						altura: 614
+						distrito: "COROSHA",
+						altura: 2056
 					},
 					{
-						distrito: "IMAZA",
-						altura: 421
+						distrito: "CUISPES",
+						altura: 1906
 					},
 					{
-						distrito: "LA PECA",
-						altura: 962
+						distrito: "FLORIDA",
+						altura: 2471
+					},
+					{
+						distrito: "FLORIDA",
+						altura: 2471
+					},
+					{
+						distrito: "FLORIDA",
+						altura: 2471
+					},
+					{
+						distrito: "JAZAN",
+						altura: 1592
+					},
+					{
+						distrito: "JUMBILLA",
+						altura: 2526
+					},
+					{
+						distrito: "RECTA",
+						altura: 2414
+					},
+					{
+						distrito: "SAN CARLOS",
+						altura: 2121
+					},
+					{
+						distrito: "SHIPASBAMBA",
+						altura: 2132
+					},
+					{
+						distrito: "VALERA",
+						altura: 2135
+					},
+					{
+						distrito: "YAMBRASBAMBA",
+						altura: 1891
 					}
 				]
 			},
