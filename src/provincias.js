@@ -525,239 +525,244 @@ const departamentos = [
 		provincias:
 		[
 			{
-				provincias: "Trujillo",
-				altura: 55
+				provincias: "TRUJILLO",
+				altura: 360
 			},
 			{
-				provincias: "Ascope",
-				altura: 55
+				provincias: "ASCOPE",
+				altura: 111
 			},
 			{
-				provincias: "Bolívar",
-				altura: 55
+				provincias: "BOLIVAR",
+				altura: 2687
 			},
 			{
-				provincias: "Chepén",
-				altura: 55
+				provincias: "CHEPEN",
+				altura: 109
+            },
+            {
+				provincias: "GRAN CHIMU",
+				altura: 1802
 			},
 			{
-				provincias: "Julcán",
-				altura: 55
+				provincias: "JULCAN",
+				altura: 3312
 			},
 			{
-				provincias: "Otuzco",
-				altura: 55
+				provincias: "OTUZCO",
+				altura: 2913
 			},
 			{
-				provincias: "Pacasmayo",
-				altura: 55
+				provincias: "PACASMAYO",
+				altura: 77
 			},
 			{
-				provincias: "Pataz",
-				altura: 55
+				provincias: "PATAZ",
+				altura: 2907
+            },
+            {
+				provincias: "SANCHEZ CARRION",
+				altura: 3001
 			},
 			{
-				provincias: "Santiago de Chuco",
-				altura: 55
+				provincias: "SANTIAGO DE CHUCO",
+				altura: 3342
 			},
 			{
-				provincias: "Gran Chimú",
-				altura: 55
-			},
-			{
-				provincias: "Virú",
-				altura: 55
+				provincias: "VIRU",
+				altura: 224
 			}
 		]
 	},
 	{
-		departamento: "Lambayeque",
+		departamento: "LAMBAYEQUE",
 		provincias:
 		[
 			{
-				provincias: "Chiclayo",
-				altura: 55
+				provincias: "CHICLAYO",
+				altura: 101
 			},
 			{
-				provincias: "Ferreñafe",
-				altura: 55
+				provincias: "FERREÑAFE",
+				altura: 1550
 			},
 			{
-				provincias: "Lambayeque",
-				altura: 55
+				provincias: "LAMBAYEQUE",
+				altura: 252
 			}
 		]
 	},
 	{
-		departamento: "Lima",
+		departamento: "LIMA",
 		provincias:
 		[
 			{
-				provincias: "Lima",
-				altura: 55
+				provincias: "LIMA",
+				altura: 216
 			},
 			{
-				provincias: "Barranca",
-				altura: 55
+				provincias: "BARRANCA",
+				altura: 203
 			},
 			{
-				provincias: "Cajatambo",
-				altura: 55
+				provincias: "CAJATAMBO",
+				altura: 3532
 			},
 			{
-				provincias: "Canta",
-				altura: 55
+				provincias: "CANTA",
+				altura: 2933
 			},
 			{
-				provincias: "Cañete",
-				altura: 55
+				provincias: "CAÑETE",
+				altura: 163
 			},
 			{
-				provincias: "Huaral",
-				altura: 55
+				provincias: "HUARAL",
+				altura: 1867
 			},
 			{
-				provincias: "Huarochirí",
-				altura: 55
+				provincias: "HUAROCHIRI",
+				altura: 3210
 			},
 			{
-				provincias: "Huaura",
-				altura: 55
+				provincias: "HUAURA",
+				altura: 1770
 			},
 			{
-				provincias: "Oyón",
-				altura: 55
+				provincias: "OYON",
+				altura: 3861
 			}, {
-				provincias: "Yauyos",
-				altura: 55
+				provincias: "YAUYOS",
+				altura: 3304
 			}
 		]
 	},
 	{
-		departamento: "Loreto",
+		departamento: "LORETO",
 		provincias:
 		[
 			{
-				provincias: "Maynas",
-				altura: 55
+				provincias: "ALTO AMAZONAS",
+				altura: 162
+            },
+            {
+				provincias: "DATEM DEL MARAÑON",
+				altura: 204
 			},
 			{
-				provincias: "Alto Amazonas",
-				altura: 55
+				provincias: "LORETO",
+				altura: 124
 			},
 			{
-				provincias: "Loreto",
-				altura: 55
+				provincias: "MARISCAL RAMON CASTILLA",
+				altura: 88
+            },
+            {
+				provincias: "MAYNAS",
+				altura: 110
+            },
+            {
+				provincias: "PUTUMAYO",
+				altura: 144
 			},
 			{
-				provincias: "Mariscal Ramón Castilla",
-				altura: 55
+				provincias: "REQUENA",
+				altura: 116
 			},
 			{
-				provincias: "Requena",
-				altura: 55
+				provincias: "UCAYALI",
+				altura: 145
+			},
+		]
+	},
+	{
+		departamento: "MADRE DE DIOS",
+		provincias:
+		[
+            {
+				provincias: "MANU",
+				altura: 378
+            },
+            {
+				provincias: "TAHUAMANU",
+				altura: 293
 			},
 			{
-				provincias: "Ucayali",
-				altura: 55
+				provincias: "TAMBOPATA",
+				altura: 242
+			},
+		]
+	},
+	{
+		departamento: "MOQUEGUA",
+		provincias:
+		[
+            {
+				provincias: "GENERAL SANCHEZ CERRO",
+				altura: 3668
+			},
+            {
+				provincias: "ILO",
+				altura: 173
 			},
 			{
-				provincias: "Datem del Marañón",
-				altura: 55
-			}, {
-				provincias: "Putumayo",
-				altura: 55
+				provincias: "MARISCAL NIETO",
+				altura: 3369
+			}			
+		]
+	},
+	{
+		departamento: "PASCO",
+		provincias:
+		[
+            {
+				provincias: "DANIEL ALCIDES CARRION",
+				altura: 4024
+			},
+			{
+				provincias: "OXAPAMPA",
+				altura: 1211
+			},
+			{
+				provincias: "PASCO",
+				altura: 4064
 			}
 		]
 	},
 	{
-		departamento: "Madre de Dios",
+		departamento: "PIURA",
 		provincias:
 		[
 			{
-				provincias: "Tambopata",
+				provincias: "PIURA",
 				altura: 55
 			},
 			{
-				provincias: "Manu",
+				provincias: "AYABACA",
 				altura: 55
 			},
 			{
-				provincias: "Tahuamanu",
-				altura: 55
-			}
-		]
-	},
-	{
-		departamento: "Moquegua",
-		provincias:
-		[
-			{
-				provincias: "Marical Nieto",
+				provincias: "HUANCABAMBA",
 				altura: 55
 			},
 			{
-				provincias: "General Sánchez Cerro",
+				provincias: "MORROPON",
 				altura: 55
 			},
 			{
-				provincias: "Ilo",
-				altura: 55
-			}
-		]
-	},
-	{
-		departamento: "Pasco",
-		provincias:
-		[
-			{
-				provincias: "Pasco",
+				provincias: "PAITA",
 				altura: 55
 			},
 			{
-				provincias: "Daniel Alcides Carrión",
+				provincias: "SULLANA",
 				altura: 55
 			},
 			{
-				provincias: "Oxapampa",
-				altura: 55
-			}
-		]
-	},
-	{
-		departamento: "Piura",
-		provincias:
-		[
-			{
-				provincias: "Piura",
+				provincias: "TALARA",
 				altura: 55
 			},
 			{
-				provincias: "Ayabaca",
-				altura: 55
-			},
-			{
-				provincias: "Huancabamba",
-				altura: 55
-			},
-			{
-				provincias: "Morropón",
-				altura: 55
-			},
-			{
-				provincias: "Paita",
-				altura: 55
-			},
-			{
-				provincias: "Sullana",
-				altura: 55
-			},
-			{
-				provincias: "Talara",
-				altura: 55
-			},
-			{
-				provincias: "Sechura",
+				provincias: "SECHURA",
 				altura: 55
 			}
 		]
