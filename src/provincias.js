@@ -193,178 +193,178 @@ const departamentos = [
 		]
 	},
 	{
-		departamento: "Ayacucho",
+		departamento: "AYACUCHO",
 		provincias:
 		[
 			{
-				provincias: "Huamanga",
-				altura: 55
+				provincias: "HUAMANGA",
+				altura: 3291
 			},
 			{
-				provincias: "Cangallo",
-				altura: 55
+				provincias: "CANGALLO",
+				altura: 3819
 			},
 			{
-				provincias: "Huancasancos",
-				altura: 55
+				provincias: "HUANCA SANCOS",
+				altura: 4006
 			},
 			{
-				provincias: "Huanta",
-				altura: 55
+				provincias: "HUANTA",
+				altura: 2766
 			},
 			{
-				provincias: "La Mar",
-				altura: 55
+				provincias: "LA MAR",
+				altura: 2542
 			},
 			{
-				provincias: "Lucanas",
-				altura: 55
+				provincias: "LUCANAS",
+				altura: 3388
 			},
 			{
-				provincias: "Parinacochas",
-				altura: 55
+				provincias: "PARINACOCHAS",
+				altura: 3717
 			},
 			{
-				provincias: "Paúcar del Sara Sara",
-				altura: 55
+				provincias: "PAUCAR DEL SARA SARA",
+				altura: 3443
 			},
 			{
-				provincias: "Sucre",
-				altura: 55
+				provincias: "SUCRE",
+				altura: 3632
 			},
 			{
-				provincias: "Víctor Fajardo",
-				altura: 55
+				provincias: "VICTOR FAJARDO",
+				altura: 3723
 			},
 			{
-				provincias: "Vilcashuamán",
-				altura: 55
+				provincias: "VILCAS HUAMAN",
+				altura: 3224
 			}
 		]
 	},
 	{
-		departamento: "Cajamarca",
+		departamento: "CAJAMARCA",
 		provincias:
 		[
 			{
-				provincias: "Cajamarca",
-				altura: 55
+				provincias: "CAJAMARCA",
+				altura: 2914
 			},
 			{
-				provincias: "Cajabamba",
-				altura: 55
+				provincias: "CAJABAMBA",
+				altura: 2752
 			},
 			{
-				provincias: "Celendín",
-				altura: 55
+				provincias: "CELENDIN",
+				altura: 2742
 			},
 			{
-				provincias: "Chota",
-				altura: 55
+				provincias: "CHOTA",
+				altura: 2234
 			},
 			{
-				provincias: "Contumazá",
-				altura: 55
+				provincias: "CONTUMAZA",
+				altura: 2081
 			},
 			{
-				provincias: "Cutervo",
-				altura: 55
+				provincias: "CUTERVO",
+				altura: 1838
 			},
 			{
-				provincias: "Hualgayoc",
-				altura: 55
+				provincias: "HUALGAYOC",
+				altura: 3053
 			},
 			{
-				provincias: "Jaén",
-				altura: 55
+				provincias: "JAEN",
+				altura: 1593
 			},
 			{
-				provincias: "San Ignacio",
-				altura: 55
+				provincias: "SAN IGNACIO",
+				altura: 1449
 			},
 			{
-				provincias: "San Marcos",
-				altura: 55
+				provincias: "SAN MARCOS",
+				altura: 2877
 			},
 			{
-				provincias: "San Miguel",
-				altura: 55
+				provincias: "SAN MIGUEL",
+				altura: 2082
 			},
 			{
-				provincias: "San Pablo",
-				altura: 55
+				provincias: "SAN PABLO",
+				altura: 2442
 			},
 			{
-				provincias: "Santa Cruz",
-				altura: 55
+				provincias: "SANTA CRUZ",
+				altura: 2140
 			},
 		]
 	},
 	{
-		departamento: "Callao",
+		departamento: "CALLAO",
 		provincias:
 		[
 			{
-				provincias: "Callao",
-				altura: 55
+				provincias: "CALLAO",
+				altura: 25
 			}
 		]
 	},
 	{
-		departamento: "Cusco",
+		departamento: "CUSCO",
 		provincias:
 		[
 			{
-				provincias: "Cusco",
-				altura: 55
+				provincias: "CUSCO",
+				altura: 3639
 			},
 			{
-				provincias: "Acomayo",
-				altura: 55
+				provincias: "ACOMAYO",
+				altura: 3820
 			},
 			{
-				provincias: "Anta",
-				altura: 55
+				provincias: "ANTA",
+				altura: 3416
 			},
 			{
-				provincias: "Calca",
-				altura: 55
+				provincias: "CALCA",
+				altura: 3441
 			},
 			{
-				provincias: "Canas",
-				altura: 55
+				provincias: "CANAS",
+				altura: 4079
 			},
 			{
-				provincias: "Canchis",
-				altura: 55
+				provincias: "CANCHIS",
+				altura: 4267
 			},
 			{
-				provincias: "Chumbivilcas",
-				altura: 55
+				provincias: "CHUMBIVILCAS",
+				altura: 4027
 			},
 			{
-				provincias: "Espinar",
-				altura: 55
+				provincias: "ESPINAR",
+				altura: 4220
 			},
 			{
-				provincias: "La Convención",
-				altura: 55
+				provincias: "LA CONVENCION",
+				altura: 1837
 			},
 			{
-				provincias: "Paruro",
-				altura: 55
+				provincias: "PARURO",
+				altura: 3510
 			},
 			{
-				provincias: "Paucartambo",
-				altura: 55
+				provincias: "PAUCARTAMBO",
+				altura: 3283
 			},
 			{
-				provincias: "Quispicanchi",
-				altura: 55
+				provincias: "QUISPICANCHI",
+				altura: 3696
 			},
 			{
-				provincias: "Urubamba",
-				altura: 55
+				provincias: "URUBAMBA",
+				altura: 3348
 			}
 		]
 	},
