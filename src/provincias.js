@@ -1,4 +1,4 @@
-const departamentos = [
+const Provincias = [
 	{
 		departamento: "AMAZONAS",
 		provincias:
@@ -733,208 +733,208 @@ const departamentos = [
 		departamento: "PIURA",
 		provincias:
 		[
-			{
-				provincias: "PIURA",
-				altura: 55
-			},
-			{
+            {
 				provincias: "AYABACA",
-				altura: 55
-			},
-			{
+				altura: 1629
+            },
+            {
 				provincias: "HUANCABAMBA",
-				altura: 55
+				altura: 1912
 			},
 			{
 				provincias: "MORROPON",
-				altura: 55
+				altura: 824
 			},
 			{
 				provincias: "PAITA",
-				altura: 55
+				altura: 35
 			},
 			{
+				provincias: "PIURA",
+				altura: 140
+            },
+            {
+				provincias: "SECHURA",
+				altura: 23
+			},		
+			{
 				provincias: "SULLANA",
-				altura: 55
+				altura: 185
 			},
 			{
 				provincias: "TALARA",
-				altura: 55
+				altura: 152
+			}			
+		]
+	},
+	{
+		departamento: "PUNO",
+		provincias:
+		[
+            {
+				provincias: "AZANGARO",
+				altura: 4000
 			},
 			{
-				provincias: "SECHURA",
-				altura: 55
+				provincias: "CARABAYA",
+				altura: 4018
+			},
+			{
+				provincias: "CHUCUITO",
+				altura: 4048
+			},
+			{
+				provincias: "EL COLLAO",
+				altura: 4020
+            },
+            {
+				provincias: "HUANCANE",
+				altura: 3992
+			},
+			{
+				provincias: "LAMPA",
+				altura: 4398
+			},
+			{
+				provincias: "MELGAR",
+				altura: 4170
+			},
+			{
+				provincias: "MOHO",
+				altura: 3978
+			},
+			{
+				provincias: "PUNO",
+				altura: 4000
+			},			
+			{
+				provincias: "SAN ANTONIO DE PUTINA",
+				altura: 4313
+			},
+			{
+				provincias: "SAN ROMAN",
+				altura: 3893
+			},
+			{
+				provincias: "SANDIA",
+				altura: 2599
+			},
+			{
+				provincias: "YUNGUYO",
+				altura: 3882
 			}
 		]
 	},
 	{
-		departamento: "Puno",
+		departamento: "SAN MARTIN",
 		provincias:
 		[
-			{
-				provincias: "Puno",
-				altura: 55
+            {
+				provincias: "BELLAVISTA",
+				altura: 381
 			},
 			{
-				provincias: "Azángaro",
-				altura: 55
+				provincias: "EL DORADO",
+				altura: 628
 			},
 			{
-				provincias: "Carabaya",
-				altura: 55
+				provincias: "HUALLAGA",
+				altura: 431
 			},
 			{
-				provincias: "Chucuito",
-				altura: 55
+				provincias: "LAMAS",
+				altura: 689
 			},
 			{
-				provincias: "El Collao",
-				altura: 55
+				provincias: "MARISCAL CACERES",
+				altura: 442
 			},
 			{
-				provincias: "Huancané",
-				altura: 55
+				provincias: "MOYOBAMBA",
+				altura: 1005
+			},			
+			{
+				provincias: "PICOTA",
+				altura: 372
 			},
 			{
-				provincias: "Lampa",
-				altura: 55
+				provincias: "RIOJA",
+				altura: 991
 			},
 			{
-				provincias: "Melgar",
-				altura: 55
+				provincias: "SAN MARTIN",
+				altura: 321
 			},
 			{
-				provincias: "Moho",
-				altura: 55
-			},
-			{
-				provincias: "San Antonio de Putina",
-				altura: 55
-			},
-			{
-				provincias: "San Román",
-				altura: 55
-			},
-			{
-				provincias: "Sandia",
-				altura: 55
-			},
-			{
-				provincias: "Yunguyo",
-				altura: 55
+				provincias: "TOCACHE",
+				altura: 712
 			}
 		]
 	},
 	{
-		departamento: "San Martín",
+		departamento: "TACNA",
 		provincias:
 		[
-			{
-				provincias: "Moyobamba",
-				altura: 55
+            {
+				provincias: "CANDARAVE",
+				altura: 3916
 			},
 			{
-				provincias: "Bellavista",
-				altura: 55
+				provincias: "JORGE BASADRE",
+				altura: 1040
 			},
 			{
-				provincias: "El Dorado",
-				altura: 55
+				provincias: "TACNA",
+				altura: 1716
 			},
 			{
-				provincias: "Huallaga",
-				altura: 55
-			},
-			{
-				provincias: "Lamas",
-				altura: 55
-			},
-			{
-				provincias: "Mariscal Cáceres",
-				altura: 55
-			},
-			{
-				provincias: "Picota",
-				altura: 55
-			},
-			{
-				provincias: "Rioja",
-				altura: 55
-			},
-			{
-				provincias: "San Martín",
-				altura: 55
-			},
-			{
-				provincias: "Tocache",
-				altura: 55
+				provincias: "TARATA",
+				altura: 4083
 			}
 		]
 	},
 	{
-		departamento: "Tacna",
+		departamento: "TUMBES",
 		provincias:
 		[
 			{
-				provincias: "Tacna",
-				altura: 55
+				provincias: "CONTRALMIRANTE VILLAR",
+				altura: 94
+            },
+            {
+				provincias: "TUMBES",
+				altura: 59
 			},
 			{
-				provincias: "Candarave",
-				altura: 55
-			},
-			{
-				provincias: "Provincia de Jorge Basadre",
-				altura: 55
-			},
-			{
-				provincias: "Tarata",
-				altura: 55
+				provincias: "ZARUMILLA",
+				altura: 43
 			}
 		]
 	},
 	{
-		departamento: "Tumbes",
+		departamento: "UCAYALI",
 		provincias:
 		[
-			{
-				provincias: "Tumbes",
-				altura: 55
+            {
+				provincias: "ATALAYA",
+				altura: 365
+			},
+            {
+				provincias: "CORONEL PORTILLO",
+				altura: 172
 			},
 			{
-				provincias: "Contralmirante Villar",
-				altura: 55
+				provincias: "PADRE ABAD",
+				altura: 356
 			},
 			{
-				provincias: "Zarumilla",
-				altura: 55
-			}
-		]
-	},
-	{
-		departamento: "Ucayali",
-		provincias:
-		[
-			{
-				provincias: "Coronel Portillo",
-				altura: 55
-			},
-			{
-				provincias: "Atalaya",
-				altura: 55
-			},
-			{
-				provincias: "Padre Abad",
-				altura: 55
-			},
-			{
-				provincias: "Purús",
-				altura: 55
+				provincias: "PURUS",
+				altura: 252
 			}
 		]
 	},
 ];
 
-console.log(departamentos);
+console.log(Provincias);
 
-export default departamentos
+export default Provincias;
