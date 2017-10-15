@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './form.css';
 import Result from './result.js';
+import logo from './img/logo.png'
 import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio} from 'react-bootstrap';
 import {
 	BrowserRouter,
@@ -15,14 +16,19 @@ class FormDiagnostic extends Component {
 	render() {
 		return (
 			<div>
-				 <header className="encabezado">
-					<div className="btnVolver">
-		 				 <NavLink to="/home">
-							<i className="material-icons volver">keyboard_arrow_left</i>
-		 				 </NavLink>
-					</div>
-                 <h1>Resultado</h1>
-            </header>
+				 <div className="container-fluid">
+			        <div className="row menu">
+				        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
+					        <img className= "logo img-responsive" src={logo} alt=""/>
+                        </div>
+                
+                        <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right buto" >
+					        <a className="anchor" href="">¿Como Funciona?</a>
+					        <button className="btn btn-default anchor">Ver Mapa</button>
+                        </div>
+			        </div>
+			    </div>
+				<div className="formulario">
 			<Grid>
 				<Form horizontal>
 					<FormGroup controlId="formName">
@@ -111,6 +117,7 @@ class FormDiagnostic extends Component {
 					</FormGroup>
 				</Form>
 			</Grid>
+			</div>
 		</div>
 		)
 	}
