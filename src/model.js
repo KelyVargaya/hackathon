@@ -20,7 +20,7 @@ class Model {
 		this.notify = render;
     }
     diag(){
-        this.diagnost=diagnostico(this.info.prematuro, this.info.age, this.info.ageType, this.info.hemoglobina, this.info.weight);
+        this.diagnost=diagnostico(this.info.prematuro, this.info.age, this.info.ageType, this.info.hemoglobina, this.info.weight, this.info.pesoAadecuado);
     }
     getInfo(){
         Object.keys(this.info).map(a=>{

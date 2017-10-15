@@ -1,4 +1,4 @@
-function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso) {
+function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso, pesoNacer) {
     let prematuro = condicion === 'SI';
     let edad_semanas = null;
     switch (tipoEdad) {
@@ -34,8 +34,82 @@ function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso) {
         }
     }
     diagnostico = resultado ? 'anemia' : 'sin anemia';
+    let trat = tratamiento(diagnostico, peso, pesoNacer, edad);
+    console.log(trat);
     return diagnostico;
 }
 
-
+function tratamiento (diagnostico, peso, pesoNacer, edad){
+    let anemia = diagnostico === 'anemia';
+    let medicina=null;
+    let cantidadDia=null;
+    let cantidadMes=null;
+    if(edad<6){
+        medicina = 'gotas';
+        if(anemia){
+            if(pesoNacer==='SI'){
+                if(peso>=1 && peso <=5){
+                    cantidadDia=12;
+                    cantidadMes=1;
+                } else if (peso>=6 && peso <=8){
+                    cantidadDia=17;
+                    cantidadMes=2;
+                }
+            }else{
+                if(peso==2){
+                    cantidadDia=6;
+                    cantidadMes=1;
+                }else if(peso>=3 && peso <=5){
+                    cantidadDia=15;
+                    cantidadMes=1;
+                } else if (peso>=6 && peso <=8){
+                    cantidadDia=22;
+                    cantidadMes=2;
+                }
+            }
+        } else {
+            if(peso>=3 && peso <=5){
+                cantidadDia=7;
+                cantidadMes=1;
+            } else if (peso>=6 && peso <=8){
+                cantidadDia=11;
+                cantidadMes=1;
+            }
+        }
+    } else {
+        if (anemia){
+            medicina='jarabe';
+            if(peso>=9 && peso <=11){
+                cantidadDia=1.5;
+                cantidadMes=2;
+            }else if(peso>=12 && peso <=14){
+                cantidadDia=2;
+                cantidadMes=3;
+            } else if (peso>=15 && peso <=17){
+                cantidadDia=3;
+                cantidadMes=3;
+            } else if (peso>=18 && peso <=20){
+                cantidadDia=3.5;
+                cantidadMes=4;
+            } else if (peso>=21 && peso <=28){
+                cantidadDia=4.5;
+                cantidadMes=4;
+            }
+        } else {
+            medicina = 'sobre(s)';
+            if(edad>=6 && edad <12){
+                cantidadDia=1;
+                cantidadMes=1;
+            }else if(edad>=12 && edad <24){
+                cantidadDia=1;
+                cantidadMes=2;
+            } else if (edad>=24 && edad <=36){
+                cantidadDia=1;
+                cantidadMes=3;
+            }
+        }
+    }
+    return `Tomar ${cantidadDia} ${medicina=='jarabe'?'cdtas':medicina} al día
+            Al mes ${cantidadMes} ${medicina == 'sobre(s)'?'caja(s)': 'frasco(s)'}`
+}
 export default diagnostico;

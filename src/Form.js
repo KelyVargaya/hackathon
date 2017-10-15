@@ -36,7 +36,7 @@ const FormDiagnostic = ({model})=>{
 				<FormGroup controlId="formWeight">
 					<Col componentClass={ControlLabel} sm={5}> Peso </Col>
 					<Col sm={6}>
-						<FormControl type="number" placeholder="Peso" onChange={e=>model.info.weight=e.target.value}/> Kg
+						<FormControl type="number" placeholder="Peso" onChange={e=>model.info.weight=parseFloat(e.target.value)}/> Kg
 					</Col>
 				</FormGroup>
 
