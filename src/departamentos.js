@@ -187,12 +187,50 @@ const departamentos = [
 				]
 			},
 			{
-				provincias: "Condorcanqui",
-				altura: 55
+				provincias: "CONDORCANQUI",
+				distritos: [
+					{
+						distrito: "NIEVA",
+						altura: 305
+					},
+					{
+						distrito: "EL CENEPA",
+						altura: 434
+					},
+					{
+						distrito: "RIO SANTIAGO",
+						altura: 275
+					}
+				]
 			},
 			{
 				provincias: "Luya",
-				altura: 55
+				distritos: [
+					{
+						distrito: "BAGUA",
+						altura: 539
+					},
+					{
+						distrito: "ARAMANGO",
+						altura: 1122
+					},
+					{
+						distrito: "COPALLIN",
+						altura: 1058
+					},
+					{
+						distrito: "EL PARCO",
+						altura: 614
+					},
+					{
+						distrito: "IMAZA",
+						altura: 421
+					},
+					{
+						distrito: "LA PECA",
+						altura: 962
+					}
+				]
 			},
 			{
 				provincias: "Rodríguez Mendoza",
