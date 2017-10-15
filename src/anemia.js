@@ -1,5 +1,11 @@
-function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso, pesoNacer) {
+import rango from './rangos.js';
+
+function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso, pesoNacer, altura) {
     let prematuro = condicion === 'SI';
+    console.log(hemoglobina);
+    let factor = rango(altura);
+    hemoglobina = hemoglobina - factor;
+    console.log(hemoglobina);
     let edad_semanas = null;
     switch (tipoEdad) {
         case 'semanas':

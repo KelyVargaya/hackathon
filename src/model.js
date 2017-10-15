@@ -8,7 +8,7 @@ class Model {
             age: '',
             weight: '',
             pesoAdecuado: '',
-            departamento: '',
+            altura: '',
             prematuro: '',
             ageType: 'semanas',
             hemoglobina: ''
@@ -20,7 +20,7 @@ class Model {
         this.notify = render;
     }
     diag() {
-        this.diagnost = diagnostico(this.info.prematuro, this.info.age, this.info.ageType, this.info.hemoglobina, this.info.weight, this.info.pesoAadecuado);
+        this.diagnost = diagnostico(this.info.prematuro, this.info.age, this.info.ageType, this.info.hemoglobina, this.info.weight, this.info.pesoAadecuado, this.info.altura);
     }
     getInfo() {
         Object.keys(this.info).map(a => {

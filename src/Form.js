@@ -13,7 +13,8 @@ class FormDiagnostic extends Component {
 		super(props);
 		this.state = {
 			checkForm: false,
-			error: false
+			error: false,
+			dep: null
 		}
 	}
 	render() {
@@ -28,7 +29,7 @@ class FormDiagnostic extends Component {
 		}
 		const check = () => {
 			this.setState({
-				checkForm: model.info.name && model.info.age && model.info.pesoAdecuado && model.info.prematuro && model.info.hemoglobina && model.info.weight && model.info.departamento
+				checkForm: model.info.name && model.info.age && model.info.pesoAdecuado && model.info.prematuro && model.info.hemoglobina && model.info.weight && model.info.altura
 			});
 		}
 		const findError = () => {
@@ -131,20 +132,29 @@ class FormDiagnostic extends Component {
 							</Col>
 							<Col sm={5} md={5} xs={5}>
 								<FormControl componentClass="select" placeholder="select" onChange={e => {
-									model.info.departamento = e.target.value
-									check();
+									this.setState({
+										dep: e.target.value
+									})
 								}}>
+								<option value="">Seleccione Departamento</option>
 								{Provincias.map((a,index)=>{
-									return <option key={index} value={a.departamento}>{a.departamento}</option>
+									return <option key={index} value={index}>{a.departamento}</option>
 								})}
 		
 								</FormControl>
 							</Col>
 							<Col sm={5} md={5} xs={5}>
-								<FormControl componentClass="select" placeholder="select">
-									<option value="semanas">Ancash</option>
-									<option value="meses">Apurimac</option>
-									<option value='años'>Amazonas</option>
+								<FormControl componentClass="select" placeholder="select" 
+								disabled={!this.state.dep}
+								onChange={e => {
+									model.info.altura = parseInt(e.target.value);
+									console.log(model.info.altura)
+									check();
+								}}>
+									<option value="">Seleccione Provincia</option>
+									{this.state.dep && Provincias[this.state.dep].provincias.map((a,index)=>{
+										return <option key={index} value={a.altura}>{a.provincias}</option>
+									})}
 								</FormControl>
 							</Col>
 						</FormGroup>

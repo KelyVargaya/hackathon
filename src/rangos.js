@@ -116,4 +116,4 @@ function rango(altura) {
 
 }
 
-console.log(rango(4992));
+export default rango;
