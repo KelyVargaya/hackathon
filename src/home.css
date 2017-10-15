@@ -1,7 +1,8 @@
 .home{
      background: #D50000;
+     font-family: 'Courgette', cursive;
 }
-*{
+.cusiva{
     font-family: 'Courgette', cursive;
 }
 .btn-login {
@@ -14,7 +15,7 @@
     border-radius: 30px;
     font-size: 13pt;
     padding: 10px 40px 10px 40px;
-	
+	font-family: 'Courgette', cursive;
 }
 
 .login-enviar {
@@ -28,22 +29,25 @@
     margin-top: 125px;
     line-height: 50px;
     margin-bottom: 190px;
+    font-family: 'Courgette', cursive;
 }
 
 .login-enviar:hover {
-    background: white;
+    background: #ffffff;
     color: #B71C1C;
+    font-family: 'Courgette', cursive;
 }
 
 
 .buto{
     padding: 20px;
-  
+    font-family: 'Courgette', cursive;
 }
 
 .anchor{
     margin-right: 60px;
     height: 70px;
+    font-family: 'Courgette', cursive;
 }
 
 .buto a{
@@ -52,14 +56,14 @@
     padding: 20px;
     border-radius: 30px;
     font-size: 13pt;
-    
+    font-family: 'Courgette', cursive;
 }
 
 .buto a:hover{
     text-decoration: none;
     background: #B71C1C;
     color: white;
-    
+    font-family: 'Courgette', cursive;
 }
 
 @media screen and (max-width: 699px) and (min-width: 520px) {
@@ -81,38 +85,45 @@
     position: fixed;
     width: 100%;
     z-index: 2000;
+    font-family: 'Courgette', cursive;
 }
 .log{
     text-align: left;
+    font-family: 'Courgette', cursive;
 }
 
 a{
     color: black;
     font-weight: bold;
+    font-family: 'Courgette', cursive;
 }
 
 .titulo{
     margin-top: 170px;
-
+    font-family: 'Courgette', cursive;
 }
 .funcionalidad h1{
     color: #D50000;
-    
+    font-family: 'Courgette', cursive;
 }
 
 .funcion{
     margin-top: 80px;
+    font-family: 'Courgette', cursive;
 }
 
 .funcion p{
     font-weight: bold;
+    font-family: 'Courgette', cursive;
 }
 
 .funcionalidad img {
     margin: 0 auto;
     width: 50%;
+    font-family: 'Courgette', cursive;
 }
 
 .play img{
     width: 15%;
+    font-family: 'Courgette', cursive;
 }
