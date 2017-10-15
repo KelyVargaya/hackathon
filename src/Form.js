@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import './form.css';
 import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio } from 'react-bootstrap';
-
+import Result from './result.js';
+import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio} from 'react-bootstrap';
+import {
+	BrowserRouter,
+	Route,
+	Switch,
+	NavLink,
+	Redirect
+} from 'react-router-dom'
 class FormDiagnostic extends Component {
 	constructor(props) {
 		super(props);
@@ -27,6 +35,15 @@ class FormDiagnostic extends Component {
 			});
 		}
 		return (
+			<div>
+				 <header className="encabezado">
+					<div className="btnVolver">
+		 				 <NavLink to="/home">
+							<i className="material-icons volver">keyboard_arrow_left</i>
+		 				 </NavLink>
+					</div>
+                 <h1>Resultado</h1>
+            </header>
 			<Grid>
 				<Form horizontal>
 					<FormGroup controlId="formName">
@@ -134,14 +151,24 @@ class FormDiagnostic extends Component {
 								}} >
 								Diagnosticar
 						</Button>
+							<Radio name='radioGroup' value='SI' inline>SI</Radio>
+							<Radio name='radioGroup' value='NO' inline>NO</Radio>
 						</Col>
 					</FormGroup>
+				/*
+					<FormGroup >
+						<Col smOffset={2} sm={10}>
+							<NavLink className="btn btn-lg btn-block" to={"/result"}>
+								Diagnosticar
+        			</NavLink>
+						</Col>
+					</FormGroup>
+					*/
 				</Form>
 			</Grid>
+		</div>
 		)
-
 	}
-
 }
 
 export default FormDiagnostic;
