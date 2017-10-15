@@ -25,17 +25,20 @@ const Result = ({ model }) => {
                 </div>
                 <h1>Resultado</h1>
             </header>
-            <div className="row form">
-                <div className="col-md-12 col-sm-12 col-xs-12 text-center contenido">
+            <div className="form">
+                <div className="text-center contenido">
                     <p>CANTIDAD DE HEMOGLOBINA</p>
-                    <div className="img-circle circle"> <h2>{model.info.hemoglobina}</h2></div>
+                    <div className="img-circle circle"> <h2>{model.diagnost[0]}</h2></div>
 
-                    <div className="col-md-12 col-sm-12 col-xs-12 text-center tipo">
-                        <h3>{model.diagnost[0]}</h3>
+                    <div className=" text-center tipo">
+                        <h3>{model.diagnost[1].toUpperCase()}</h3>
                     </div>
-                    <div className="col-md-12 col-sm-12 col-xs-12 text-center recomendaciones">
-                        <div className="row">
-                            {model.diagnost[1]}
+                    <div className="text-center">
+                        <div className="receta">
+                            <h2>Receta Medica</h2>
+                            <p>{model.diagnost[2][0]}</p>
+                            <p>{model.diagnost[2][1]}</p>
+                            <p>{model.diagnost[2][2]}</p>
                         </div>
                     </div>
                 </div>

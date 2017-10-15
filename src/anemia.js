@@ -42,7 +42,7 @@ function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso, pesoNacer, al
         }
         diagnostico = resultado ? 'anemia' : 'sin anemia';
         let trat = tratamiento(diagnostico, peso, pesoNacer, edad);
-        return [diagnostico, trat];
+        return [hemoglobina, diagnostico, trat];
     } else {
         return null;
     }
@@ -119,8 +119,8 @@ function tratamiento(diagnostico, peso, pesoNacer, edad) {
                 }
             }
         }
-        return `Tomar ${cantidadDia} ${medicina == 'jarabe' ? 'cdtas' : medicina} al día
-                Al mes ${cantidadMes} ${medicina == 'sobre(s)' ? 'caja(s)' : 'frasco(s)'}`
+        return [medicina.toUpperCase(),`Tomar ${cantidadDia} ${medicina == 'jarabe' ? 'cdtas' : medicina} al día`,
+                `Requiere ${cantidadMes} ${medicina == 'sobre(s)' ? 'caja(s)' : 'frasco(s)'} al mes`]
     }
 }
 export default diagnostico;

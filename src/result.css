@@ -19,9 +19,9 @@ h1{
      padding: 10px;
      top: 30px;
      color: white;
-     margin-bottom: 50px;
+     margin: 40px 0;
      border-radius: 6px;
-
+    font-size: 2em;
 }
 
 .circle{
