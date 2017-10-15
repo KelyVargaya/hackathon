@@ -71,8 +71,8 @@ class FormDiagnostic extends Component {
 							<ControlLabel>¿Su peso fue adecuado al nacer?</ControlLabel>
 						</Col>
 						<Col sm={6}>
-							<Radio name='radioGroup' value='SI' inline>SI</Radio>
-							<Radio name='radioGroup' value='NO' inline>NO</Radio>
+							<Radio name='radioGroup11' value='SI' inline>SI</Radio>
+							<Radio name='radioGroup12' value='NO' inline>NO</Radio>
 						</Col>
 					</FormGroup>
 
@@ -81,8 +81,8 @@ class FormDiagnostic extends Component {
 							<ControlLabel>¿Su naciemiento fue prematuro?</ControlLabel>
 						</Col>
 						<Col sm={6}>
-							<Radio name='radioGroup' value='SI' inline>SI</Radio>
-							<Radio name='radioGroup' value='NO' inline>NO</Radio>
+							<Radio name='radioGroup21' value='SI' inline>SI</Radio>
+							<Radio name='radioGroup22' value='NO' inline>NO</Radio>
 						</Col>
 					</FormGroup>
 

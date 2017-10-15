@@ -674,6 +674,124 @@ const departamentos=[
         provincias:
         [
             {
+                provincias:"Tambopata",
+                altura: 55
+            },
+            {
+                provincias:"Manu",
+                altura: 55
+            },
+            {
+                provincias:"Tahuamanu",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Moquegua",
+        provincias:
+        [
+            {
+                provincias:"Marical Nieto",
+                altura: 55
+            },
+            {
+                provincias:"General Sánchez Cerro",
+                altura: 55
+            },
+            {
+                provincias:"Ilo",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Pasco",
+        provincias:
+        [
+            {
+                provincias:"Pasco",
+                altura: 55
+            },
+            {
+                provincias:"Daniel Alcides Carrión",
+                altura: 55
+            },
+            {
+                provincias:"Oxapampa",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Piura",
+        provincias:
+        [
+            {
+                provincias:"Piura",
+                altura: 55
+            },
+            {
+                provincias:"Ayabaca",
+                altura: 55
+            },
+            {
+                provincias:"Huancabamba",
+                altura: 55
+            },
+            {
+                provincias:"Morropón",
+                altura: 55
+            },
+            {
+                provincias:"Paita",
+                altura: 55
+            },
+            {
+                provincias:"Sullana",
+                altura: 55
+            },
+            {
+                provincias:"Talara",
+                altura: 55
+            },
+            {
+                provincias:"Sechura",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Lambayeque",
+        provincias:
+        [
+            {
+                provincias:"Ica",
+                altura: 55
+            },
+            {
+                provincias:"Chincha",
+                altura: 55
+            },
+            {
+                provincias:"Nazca",
+                altura: 55
+            },
+            {
+                provincias:"Palpa",
+                altura: 55
+            },
+            {
+                provincias:"Pisco",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Lambayeque",
+        provincias:
+        [
+            {
                 provincias:"Ica",
                 altura: 55
             },
