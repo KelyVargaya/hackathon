@@ -762,81 +762,173 @@ const departamentos=[
         ]
     },
     {
-        departamento: "Lambayeque",
+        departamento: "Puno",
         provincias:
         [
             {
-                provincias:"Ica",
+                provincias:"Puno",
                 altura: 55
             },
             {
-                provincias:"Chincha",
+                provincias:"Azángaro",
                 altura: 55
             },
             {
-                provincias:"Nazca",
+                provincias:"Carabaya",
                 altura: 55
             },
             {
-                provincias:"Palpa",
+                provincias:"Chucuito",
                 altura: 55
             },
             {
-                provincias:"Pisco",
+                provincias:"El Collao",
+                altura: 55
+            },
+            {
+                provincias:"Huancané",
+                altura: 55
+            },
+            {
+                provincias:"Lampa",
+                altura: 55
+            },
+            {
+                provincias:"Melgar",
+                altura: 55
+            },
+            {
+                provincias:"Moho",
+                altura: 55
+            },
+            {
+                provincias:"San Antonio de Putina",
+                altura: 55
+            },
+            {
+                provincias:"San Román",
+                altura: 55
+            },
+            {
+                provincias:"Sandia",
+                altura: 55
+            },
+            {
+                provincias:"Yunguyo",
                 altura: 55
             }
         ]
     },
     {
-        departamento: "Lambayeque",
+        departamento: "San Martín",
         provincias:
         [
             {
-                provincias:"Ica",
+                provincias:"Moyobamba",
                 altura: 55
             },
             {
-                provincias:"Chincha",
+                provincias:"Bellavista",
                 altura: 55
             },
             {
-                provincias:"Nazca",
+                provincias:"El Dorado",
                 altura: 55
             },
             {
-                provincias:"Palpa",
+                provincias:"Huallaga",
                 altura: 55
             },
             {
-                provincias:"Pisco",
+                provincias:"Lamas",
+                altura: 55
+            },
+            {
+                provincias:"Mariscal Cáceres",
+                altura: 55
+            },
+            {
+                provincias:"Picota",
+                altura: 55
+            },
+            {
+                provincias:"Rioja",
+                altura: 55
+            },
+            {
+                provincias:"San Martín",
+                altura: 55
+            },
+            {
+                provincias:"Tocache",
                 altura: 55
             }
         ]
     },
     {
-        departamento: "Lambayeque",
+        departamento: "Tacna",
         provincias:
         [
             {
-                provincias:"Ica",
+                provincias:"Tacna",
                 altura: 55
             },
             {
-                provincias:"Chincha",
+                provincias:"Candarave",
                 altura: 55
             },
             {
-                provincias:"Nazca",
+                provincias:"Provincia de Jorge Basadre",
                 altura: 55
             },
             {
-                provincias:"Palpa",
+                provincias:"Tarata",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Tumbes",
+        provincias:
+        [
+            {
+                provincias:"Tumbes",
                 altura: 55
             },
             {
-                provincias:"Pisco",
+                provincias:"Contralmirante Villar",
+                altura: 55
+            },
+            {
+                provincias:"Zarumilla",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Ucayali",
+        provincias:
+        [
+            {
+                provincias:"Coronel Portillo",
+                altura: 55
+            },
+            {
+                provincias:"Atalaya",
+                altura: 55
+            },
+            {
+                provincias:"Padre Abad",
+                altura: 55
+            },
+            {
+                provincias:"Purús",
                 altura: 55
             }
         ]
     },
 ];
+
+console.log(departamentos);
+
+export default departamentos

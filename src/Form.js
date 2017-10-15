@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './form.css';
 import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio} from 'react-bootstrap';
-
+import departamentos from './departamentos.js';
 
 class FormDiagnostic extends Component {
 	render() {
