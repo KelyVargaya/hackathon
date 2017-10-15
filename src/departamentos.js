@@ -204,41 +204,191 @@ const departamentos = [
 				]
 			},
 			{
-				provincias: "Luya",
+				provincias: "LUYA",
 				distritos: [
 					{
-						distrito: "BAGUA",
-						altura: 539
+						distrito: "LAMUD",
+						altura: 2574
 					},
 					{
-						distrito: "ARAMANGO",
-						altura: 1122
+						distrito: "CAMPORREDONDO",
+						altura: 1737
 					},
 					{
-						distrito: "COPALLIN",
-						altura: 1058
+						distrito: "COCABAMBA",
+						altura: 2079
+					},
+					{
+						distrito: "COLCAMAR",
+						altura: 2395
+					},
+					{
+						distrito: "CONILA",
+						altura: 2789
+					},
+					{
+						distrito: "INGUILPATA",
+						altura: 2456
+					},
+					{
+						distrito: "LONGUITA",
+						altura: 3127
+					},
+					{
+						distrito: "LONYA CHICO",
+						altura: 2558
+					},
+					{
+						distrito: "LUYA",
+						altura: 2464
+					},
+					{
+						distrito: "MARIA",
+						altura: 3087
+					},
+					{
+						distrito: "OCALLI",
+						altura: 1596
+					},
+					{
+						distrito: "OCUMAL",
+						altura: 2051
+					},
+					{
+						distrito: "PISUQUIA",
+						altura: 2446
+					},
+					{
+						distrito: "PROVIDENCIA",
+						altura: 1824
+					},
+					{
+						distrito: "SAN CRISTOBAL",
+						altura: 2560
+					},
+					{
+						distrito: "SAN FRANCISCO DEL YESO",
+						altura: 2705
+					},
+					{
+						distrito: "SAN JERONIMO",
+						altura: 1971
+					},
+					{
+						distrito: "SAN JUAN DE LOPECANCHA",
+						altura: 2525
+					},
+					{
+						distrito: "SANTA CATALINA",
+						altura: 2339
+					},
+					{
+						distrito: "SANTO TOMAS",
+						altura: 2921
+					},
+					{
+						distrito: "TINGO",
+						altura: 2409
+					},
+					{
+						distrito: "TRITA",
+						altura: 2716
+					}
+				]
+			},
+			{
+				provincias: "RODRÍGUEZ DE MENDOZA",
+				distritos: [
+					{
+						distrito: "SAN NICOLAS",
+						altura: 1685
+					},
+					{
+						distrito: "CHIRIMOTO",
+						altura: 1702
+					},
+					{
+						distrito: "COCHAMAL",
+						altura: 2023
+					},
+					{
+						distrito: "HUAMBO",
+						altura: 1617
+					},
+					{
+						distrito: "LIMABAMBA",
+						altura: 2296
+					},
+					{
+						distrito: "LONGAR",
+						altura: 2317
+					},
+					{
+						distrito: "MARISCAL BENAVIDES",
+						altura: 2075
+					},
+					{
+						distrito: "MILPUC",
+						altura: 1747
+					},
+					{
+						distrito: "OMIA",
+						altura: 1847
+					},
+					{
+						distrito: "SAN NICOLAS",
+						altura: 1685
+					},
+					{
+						distrito: "SANTA ROSA",
+						altura: 1828
+					},
+					{
+						distrito: "TOTORA",
+						altura: 1701
+					},
+					{
+						distrito: "VISTA ALEGRE",
+						altura: 1967
+					}
+				]
+			},
+			{
+				provincias: "Utcubamba",
+				distritos: [
+					{
+						distrito: "BAGUA GRANDE",
+						altura: 1423
+					},
+					{
+						distrito: "CAJARURO",
+						altura: 1710
+					},
+					{
+						distrito: "CUMBA",
+						altura: 1286
 					},
 					{
 						distrito: "EL PARCO",
 						altura: 614
 					},
 					{
-						distrito: "IMAZA",
-						altura: 421
+						distrito: "EL MILAGRO",
+						altura: 610
 					},
 					{
-						distrito: "LA PECA",
-						altura: 962
+						distrito: "JAMALCA",
+						altura: 1371
+					},
+					{
+						distrito: "LONYA GRANDE",
+						altura: 1539
+					},
+					{
+						distrito: "YAMON",
+						altura: 1565
 					}
 				]
-			},
-			{
-				provincias: "Rodríguez Mendoza",
-				altura: 55
-			},
-			{
-				provincias: "Utcubamba",
-				altura: 55
 			}
 		]
 	},
