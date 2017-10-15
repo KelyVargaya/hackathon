@@ -3,6 +3,7 @@ import './result.css';
 import {
     NavLink
 } from 'react-router-dom'
+import logo from './img/logo.png'
 
 const Result = ({ model }) => {
     const reiniciar = ()=>{
@@ -16,15 +17,27 @@ const Result = ({ model }) => {
         console.log(model.info);
     }
     return (
-        <section className="resultado">
+        <div>
+            <div className="container-fluid">
+			        <div className="row menu">
+				        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
+					        <img className= "logo img-responsive" src={logo} alt=""/>
+                        </div>
+                
+                        <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right buto" >
+					        <a className="anchor" href="">¿Como Funciona?</a>
+					        <button className="btn btn-default anchor">Ver Mapa</button>
+                        </div>
+			        </div>
+			    </div>
             <header className="encabezado">
                 <div className="btnVolver">
                     <NavLink to="/form" onClick={reiniciar}>
                         <i className="material-icons volver">keyboard_arrow_left</i>
                     </NavLink>
                 </div>
-                <h1>Resultado</h1>
             </header>
+            <h1>Resultado</h1>
             <div className="form">
                 <div className="text-center contenido">
                     <p>CANTIDAD DE HEMOGLOBINA</p>
@@ -43,7 +56,7 @@ const Result = ({ model }) => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

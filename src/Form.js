@@ -3,6 +3,11 @@ import './App.css';
 import './form.css';
 import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio } from 'react-bootstrap';
 import Result from './result.js';
+<<<<<<< HEAD
+=======
+import logo from './img/logo.png'
+import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio} from 'react-bootstrap';
+>>>>>>> 9ccf5e99c12cbb2de473d988196ef3edd6c85c64
 import {
 	NavLink
 } from 'react-router-dom'
@@ -48,6 +53,18 @@ class FormDiagnostic extends Component {
 		}
 		return (
 			<div>
+<div className="container-fluid">
+			        <div className="row menu">
+				        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
+					        <img className= "logo img-responsive" src={logo} alt=""/>
+                        </div>
+                
+                        <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right buto" >
+					        <a className="anchor" href="">¿Como Funciona?</a>
+					        <button className="btn btn-default anchor">Ver Mapa</button>
+                        </div>
+			        </div>
+			    </div>
 				<header className="encabezado">
 					<div className="btnVolver">
 						<NavLink to="/home">
@@ -56,6 +73,7 @@ class FormDiagnostic extends Component {
 					</div>
 					<h1>Resultado</h1>
 				</header>
+				<div className="formulario">
 				<Grid>
 					<Form horizontal>
 						<FormGroup controlId="formName">
@@ -202,6 +220,7 @@ class FormDiagnostic extends Component {
 						</FormGroup>
 					</Form>
 				</Grid>
+				</div>
 			</div>
 		)
 	}
