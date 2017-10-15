@@ -367,4 +367,358 @@ const departamentos=[
             }
         ]
     },
+    {
+        departamento: "Huancavelica",
+        provincias:
+        [
+            {
+                provincias:"Huancavelica",
+                altura: 55
+            },
+            {
+                provincias:"Acobamba",
+                altura: 55
+            },
+            {
+                provincias:"Angaraes",
+                altura: 55
+            },
+            {
+                provincias:"Castrovirreyna",
+                altura: 55
+            },
+            {
+                provincias:"Churcampa",
+                altura: 55
+            },
+            {
+                provincias:"Huaytará",
+                altura: 55
+            },
+            {
+                provincias:"Tayacaja",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Huánuco",
+        provincias:
+        [
+            {
+                provincias:"Huánuco",
+                altura: 55
+            },
+            {
+                provincias:"Ambo",
+                altura: 55
+            },
+            {
+                provincias:"Dos de Mayo",
+                altura: 55
+            },
+            {
+                provincias:"Huacaybamba",
+                altura: 55
+            },
+            {
+                provincias:"Huamalíes",
+                altura: 55
+            },
+            {
+                provincias:"Leoncio Prado",
+                altura: 55
+            },
+            {
+                provincias:"Marañón",
+                altura: 55
+            },
+            {
+                provincias:"Pachitea",
+                altura: 55
+            },
+            {
+                provincias:"Puerto Inca",
+                altura: 55
+            },
+            {
+                provincias:"Lauricocha",
+                altura: 55
+            },
+            {
+                provincias:"Yariwilca",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Ica",
+        provincias:
+        [
+            {
+                provincias:"Ica",
+                altura: 55
+            },
+            {
+                provincias:"Chincha",
+                altura: 55
+            },
+            {
+                provincias:"Nazca",
+                altura: 55
+            },
+            {
+                provincias:"Palpa",
+                altura: 55
+            },
+            {
+                provincias:"Pisco",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Junín",
+        provincias:
+        [
+            {
+                provincias:"Huancayo",
+                altura: 55
+            },
+            {
+                provincias:"Concepción",
+                altura: 55
+            },
+            {
+                provincias:"Chanchamayo",
+                altura: 55
+            },
+            {
+                provincias:"Jauja",
+                altura: 55
+            },
+            {
+                provincias:"Junín",
+                altura: 55
+            },
+            {
+                provincias:"Satipo",
+                altura: 55
+            },
+            {
+                provincias:"Tarma",
+                altura: 55
+            },
+            {
+                provincias:"Yauli",
+                altura: 55
+            },
+            {
+                provincias:"Chupaca",
+                altura: 55
+            },
+        ]
+    },
+    {
+        departamento: "La Libertad",
+        provincias:
+        [
+            {
+                provincias:"Trujillo",
+                altura: 55
+            },
+            {
+                provincias:"Ascope",
+                altura: 55
+            },
+            {
+                provincias:"Bolívar",
+                altura: 55
+            },
+            {
+                provincias:"Chepén",
+                altura: 55
+            },
+            {
+                provincias:"Julcán",
+                altura: 55
+            },
+            {
+                provincias:"Otuzco",
+                altura: 55
+            },
+            {
+                provincias:"Pacasmayo",
+                altura: 55
+            },
+            {
+                provincias:"Pataz",
+                altura: 55
+            },
+            {
+                provincias:"Santiago de Chuco",
+                altura: 55
+            },
+            {
+                provincias:"Gran Chimú",
+                altura: 55
+            },   
+            {
+                provincias:"Virú",
+                altura: 55
+            }          
+        ]
+    },
+    {
+        departamento: "Lambayeque",
+        provincias:
+        [
+            {
+                provincias:"Chiclayo",
+                altura: 55
+            },
+            {
+                provincias:"Ferreñafe",
+                altura: 55
+            },
+            {
+                provincias:"Lambayeque",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Lima",
+        provincias:
+        [
+            {
+                provincias:"Lima",
+                altura: 55
+            },
+            {
+                provincias:"Barranca",
+                altura: 55
+            },
+            {
+                provincias:"Cajatambo",
+                altura: 55
+            },
+            {
+                provincias:"Canta",
+                altura: 55
+            },
+            {
+                provincias:"Cañete",
+                altura: 55
+            },
+            {
+                provincias:"Huaral",
+                altura: 55
+            },
+            {
+                provincias:"Huarochirí",
+                altura: 55
+            },
+            {
+                provincias:"Huaura",
+                altura: 55
+            },
+            {
+                provincias:"Oyón",
+                altura: 55
+            },{
+                provincias:"Yauyos",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Loreto",
+        provincias:
+        [
+            {
+                provincias:"Maynas",
+                altura: 55
+            },
+            {
+                provincias:"Alto Amazonas",
+                altura: 55
+            },
+            {
+                provincias:"Loreto",
+                altura: 55
+            },
+            {
+                provincias:"Mariscal Ramón Castilla",
+                altura: 55
+            },
+            {
+                provincias:"Requena",
+                altura: 55
+            },
+            {
+                provincias:"Ucayali",
+                altura: 55
+            },
+            {
+                provincias:"Datem del Marañón",
+                altura: 55
+            },{
+                provincias:"Putumayo",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Madre de Dios",
+        provincias:
+        [
+            {
+                provincias:"Ica",
+                altura: 55
+            },
+            {
+                provincias:"Chincha",
+                altura: 55
+            },
+            {
+                provincias:"Nazca",
+                altura: 55
+            },
+            {
+                provincias:"Palpa",
+                altura: 55
+            },
+            {
+                provincias:"Pisco",
+                altura: 55
+            }
+        ]
+    },
+    {
+        departamento: "Lambayeque",
+        provincias:
+        [
+            {
+                provincias:"Ica",
+                altura: 55
+            },
+            {
+                provincias:"Chincha",
+                altura: 55
+            },
+            {
+                provincias:"Nazca",
+                altura: 55
+            },
+            {
+                provincias:"Palpa",
+                altura: 55
+            },
+            {
+                provincias:"Pisco",
+                altura: 55
+            }
+        ]
+    },
 ];
