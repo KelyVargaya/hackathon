@@ -1,0 +1,36 @@
+body{
+    background: white;
+    
+   
+}
+.titulo{
+    background: #D50000;
+}
+
+.home{
+    padding-top: 50px;
+}
+.btn-login {
+  margin-top: 350px;
+}
+.btn {
+	color:white;
+    background: #B71C1C;
+    border: 1px solid grey;
+	display: inline-block;
+    
+}
+
+
+@media screen and (max-width: 699px) and (min-width: 520px) {
+    .logo{
+       width: 100px;
+       
+    }
+}
+
+.logo{
+       width: 400px;
+       margin: 0 auto;
+       
+    }
