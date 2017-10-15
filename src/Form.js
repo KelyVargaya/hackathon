@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './form.css';
-import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Checkbox, Button } from 'react-bootstrap';
+import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio} from 'react-bootstrap';
 
 const FormDiagnostic = ({model})=>{
 	return (
@@ -44,64 +44,64 @@ const FormDiagnostic = ({model})=>{
 					</Col> gr/dl
 				</FormGroup>
 
-				<FormGroup controlId="formDepartment">
-					<Col sm={4}>
-						<ControlLabel>Procedencia</ControlLabel>
-					</Col>
-					<Col sm={4}>
-						<FormControl componentClass="select" placeholder="select" onChange={e=>model.info.departamento=e.target.value}>
-							<option value="Ancash">Ancash</option>
-							<option value="Apurimac">Apurimac</option>
-							<option value='Amazonas'>Amazonas</option>
-						</FormControl>
-					</Col>
-					<Col sm={4}>
-						<FormControl componentClass="select" placeholder="select">
-							
-							<option value="semanas">semanas</option>
-							<option value="meses">meses</option>
-							<option value='años'>años</option>
-						</FormControl>
-					</Col>
-				</FormGroup>
+					<FormGroup controlId="formDepartment">
+						<Col sm={4}>
+							<ControlLabel>Procedencia</ControlLabel>
+						</Col>
+						<Col sm={4}>
+							<FormControl componentClass="select" placeholder="select">
+								<option value="Ancash">Ancash</option>
+								<option value="Apurimac">Apurimac</option>
+								<option value='Amazonas'>Amazonas</option>
+							</FormControl>
+						</Col>
+						<Col sm={4}>
+							<FormControl componentClass="select" placeholder="select">
+								<option value="semanas">Ancash</option>
+								<option value="meses">Apurimac</option>
+								<option value='años'>Amazonas</option>
+							</FormControl>
+						</Col>
+					</FormGroup>
 
-				<FormGroup controlId='formWeightBorn'>
-					<Col sm={6}>
-						<ControlLabel>¿Su peso fue adecuado al nacer?</ControlLabel>
-					</Col>
-					<Col sm={6}>
-						<FormControl componentClass="select" placeholder="select" onChange={e=>model.info.pesoAdecuado=e.target.value}>
-							<option value="SI">SI</option>
-							<option value="NO">NO</option>
-						</FormControl>
-					</Col>
-				</FormGroup>
+					<FormGroup controlId='formWeightBorn'>
+						<Col sm={6}>
+							<ControlLabel>¿Su peso fue adecuado al nacer?</ControlLabel>
+						</Col>
+						<Col sm={6}>
+						<FormControl onChange={e=>model.info.pesoAdecuado=e.target.value} >
+							<Radio name='radioGroup' value='SI' inline>SI</Radio>
+							<Radio name='radioGroup' value='NO' inline>NO</Radio>
+							</FormControl>
+						</Col>
+					</FormGroup>
 
-				<FormGroup controlId='formTimeBorn'>
-					<Col sm={6}>
-						<ControlLabel>¿Su naciemiento fue prematuro?</ControlLabel>
-					</Col>
-					<Col sm={6}>
-						<FormControl componentClass="select" placeholder="select" onChange={e=>model.info.prematuro=e.target.value}>
-							<option value="SI">SI</option>
-							<option value="NO">NO</option>
-						</FormControl>
-					</Col>
-				</FormGroup>
+					<FormGroup controlId='formTimeBorn'>
+						<Col sm={6}>
+							<ControlLabel>¿Su naciemiento fue prematuro?</ControlLabel>
+						</Col>
+						<Col sm={6}>
+						<FormControl  onChange={e=>model.info.prematuro=e.target.value}>
+							<Radio name='radioGroup' value='SI' inline>SI</Radio>
+							<Radio name='radioGroup' value='NO' inline>NO</Radio>
+							</FormControl>
+						</Col>
+					</FormGroup>
 
-				<FormGroup>
-					<Col smOffset={2} sm={10}>
-						<Button type="submit" onClick={(event)=>{
+					<FormGroup>
+						<Col smOffset={2} sm={10}>
+							<Button type="submit" onClick={(event)=>{
 							event.preventDefault()
 							model.getInfo()
 							}}>
-							Diagnosticar
-				</Button>
-					</Col>
-				</FormGroup>
-			</Form>
-		</Grid>
-	)
+								Diagnosticar
+        			</Button>
+						</Col>
+					</FormGroup>
+				</Form>
+			</Grid>
+		)
+	
 }
 
 export default FormDiagnostic;
