@@ -29,7 +29,7 @@ class App extends Component {
             render={() => <Redirect to={'/home'} />} />
           <Route path="/home" render={() => <Home />} />
           <Route path="/form" render={() => <FormDiagnostic model={model} />} />
-          <Route path="/result" render={() => <Result />} />
+          <Route path="/result" render={() => <Result model={model} />} />
           <Route component={Home} />
 
         </Switch>

@@ -10,7 +10,7 @@ class Model {
             pesoAdecuado: '',
             departamento: '',
             prematuro: '',
-            ageType: '',
+            ageType: 'semanas',
             hemoglobina: ''
         }
         this.diagnost = null;
@@ -27,7 +27,8 @@ class Model {
             console.log(a + ': ' + this.info[a]);
         })
         this.diag();
-        console.log(this.diagnost);
+        console.log(this.diagnost[0]);
+        console.log(this.diagnost[1]);
         this.notify();
     }
 }

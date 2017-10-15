@@ -1,46 +1,47 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './result.css';
 import {
-	NavLink
+    NavLink
 } from 'react-router-dom'
 
-const Result = () => {
-
-	return(
-    <section className="resultado">
-             <header className="encabezado">
-                 <div className="btnVolver">
-		 				 <NavLink to="/form">
-							<i className="material-icons volver">keyboard_arrow_left</i>
-		 				 </NavLink>
-					</div>
-                 <h1>Resultado</h1>
+const Result = ({ model }) => {
+    const reiniciar = ()=>{
+        Object.keys(model.info).filter(a=>a!='ageType').map(a => {
+            if(a==='ageType'){
+                model.info[a]='semanas';
+            } else {
+                model.info[a]='';
+            }
+        })
+        console.log(model.info);
+    }
+    return (
+        <section className="resultado">
+            <header className="encabezado">
+                <div className="btnVolver">
+                    <NavLink to="/form" onClick={reiniciar}>
+                        <i className="material-icons volver">keyboard_arrow_left</i>
+                    </NavLink>
+                </div>
+                <h1>Resultado</h1>
             </header>
-               <div className="row">
-                   <div className="col-md-12 col-sm-12 col-xs-12 text-center contenido">
-                      <p>CANTIDAD DE HEMOGLOBINA</p>
+            <div className="row form">
+                <div className="col-md-12 col-sm-12 col-xs-12 text-center contenido">
+                    <p>CANTIDAD DE HEMOGLOBINA</p>
+                    <div className="img-circle circle"> <h2>{model.info.hemoglobina}</h2></div>
 
-                      <div className="img-circle circle"> <h2>10</h2></div>
-
-                    <div className="col-xs-6 col-xs-offset-3 tipo">
-                       <h3>Tipo de Anemia: </h3> 
-                       <p>LEVE</p>
+                    <div className="col-md-12 col-sm-12 col-xs-12 text-center tipo">
+                        <h3>{model.diagnost[0]}</h3>
                     </div>
-                    
-                    <div className="col-xs-6 col-xs-offset-3 recomendaciones">
-                        <div className ="row">
-                    <ul className="list-group">
-                        <li className="list-group-item">Receta 1</li>
-                        <li className="list-group-item">receta 2</li>
-                        <li className="list-group-item">recera 3</li>
-
-                    </ul>
-                    </div>
+                    <div className="col-md-12 col-sm-12 col-xs-12 text-center recomendaciones">
+                        <div className="row">
+                            {model.diagnost[1]}
+                        </div>
                     </div>
                 </div>
-        </div>
-    </section>
- );
+            </div>
+        </section>
+    );
 }
 
 export default Result;

@@ -36,8 +36,7 @@ function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso, pesoNacer) {
         }
         diagnostico = resultado ? 'anemia' : 'sin anemia';
         let trat = tratamiento(diagnostico, peso, pesoNacer, edad);
-        console.log(trat);
-        return diagnostico;
+        return [diagnostico, trat];
     } else {
         return null;
     }
