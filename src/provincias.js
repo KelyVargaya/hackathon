@@ -935,6 +935,5 @@ const Provincias = [
 	},
 ];
 
-console.log(Provincias);
 
 export default Provincias;

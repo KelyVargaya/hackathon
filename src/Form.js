@@ -1,100 +1,227 @@
 import React, { Component } from 'react';
 import './App.css';
 import './form.css';
-import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio} from 'react-bootstrap';
-import departamentos from './departamentos.js';
+import './home.css';
+import Result from './result.js';
+import logo from './img/logo.png'
+import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio } from 'react-bootstrap';
+import {
+	NavLink
+} from 'react-router-dom'
+import Provincias from './provincias.js';
 
 class FormDiagnostic extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			checkForm: false,
+			error: false,
+			dep: null
+		}
+	}
 	render() {
+		const { model } = this.props;
+		const pesoA = (e) => {
+			model.info.pesoAdecuado = e.target.value;
+			check();
+		}
+		const prem = (e) => {
+			model.info.prematuro = e.target.value;
+			check();
+		}
+		const check = () => {
+			this.setState({
+				checkForm: model.info.name && model.info.age && model.info.pesoAdecuado && model.info.prematuro && model.info.hemoglobina && model.info.weight && model.info.altura
+			});
+		}
+		const findError = () => {
+			switch (model.info.ageType) {
+				case 'años':
+					this.setState({
+						error: model.info.age > 5
+					})
+					break;
+				case 'meses':
+					this.setState({
+						error: model.info.age > 60
+					})
+					break;
+			}
+		}
 		return (
-			<Grid>
-				<Form horizontal>
-					<FormGroup controlId="formName">
-						<Col componentClass={ControlLabel} sm={2}> Nombre </Col>
-						<Col sm={10}>
-							<FormControl type="text" placeholder="Nombre del infante" />
-						</Col>
-					</FormGroup>
+			<div>
+				<div className="container-fluid cursiva">
+					<div className="row menu">
+						<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
+							<img className="logo img-responsive" src={logo} alt="" />
+						</div>
 
-					<FormGroup controlId="formAge">
-						<Col sm={4}>
-							<ControlLabel>Edad</ControlLabel>
-						</Col>
-						<Col sm={4}>
-							<FormControl type='number' placeholder='Ingrese la edad del infante' />
-						</Col>
-						<Col sm={4}>
-							<FormControl componentClass="select" placeholder="select">
-								<option value="semanas">semanas</option>
-								<option value="meses">meses</option>
-								<option value='años'>años</option>
-							</FormControl>
-						</Col>
-					</FormGroup>
+						<div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right buto" >
+							<a className="anchor" href="">¿Como Funciona?</a>
+							<a className="btn btn-default anchor"
+							href='http://tabfacil.com/temporal/www.hacknemia.com/?page=mapa'>
+                                Ver Mapa
+                            </a>
+						</div>
+					</div>
+				</div>
+				<div className="formulario">
+					<div>
+						<NavLink to="/home" style={{display:'flex', alignItems:'center', marginLeft:'20px'}}>
+							<i className="material-icons">keyboard_arrow_left</i>
+							<span>Return</span>
+						</NavLink>
 
-					<FormGroup controlId="formWeight">
-						<Col componentClass={ControlLabel} sm={5}> Peso </Col>
-						<Col sm={6}>
-							<FormControl type="number" placeholder="Peso" /> Kg
-						</Col>
-					</FormGroup>
+					</div>
+					<Grid>
+						<Form horizontal>
+							<FormGroup controlId="formName">
+								<Col md={2} sm={2} xs={2}>
+									<ControlLabel className='label'>Nombre</ControlLabel>
+								</Col>
+								<Col md={10} sm={10} xs={10}>
+									<FormControl type="text" placeholder="Nombre del infante" onChange={e => {
+										model.info.name = e.target.value
+										check();
+										findError();
+									}} />
+								</Col>
+							</FormGroup>
 
-					<FormGroup controlId="formHb">
-						<Col componentClass={ControlLabel} sm={5}> Hb	</Col>
-						<Col sm={6}>
-							<FormControl type='number' />
-						</Col> gr/dl
-					</FormGroup>
+							<FormGroup controlId="formAge" validationState={this.state.error ? 'error' : null}>
+								<Col md={2} sm={2} xs={2}>
+									<ControlLabel className='label'>Edad</ControlLabel>
+								</Col>
+								<Col md={5} sm={5} xs={5}>
+									<FormControl type='number' placeholder='Ingrese la edad del infante'
+										onChange={e => {
+											model.info.age = parseInt(e.target.value)
+											check();
+										}} />
+								</Col>
+								<Col md={5} sm={5} xs={5}>
+									<FormControl componentClass="select" placeholder="select"
+										disabled={!model.info.age}
+										onChange={e => {
+											model.info.ageType = e.target.value
+											findError();
+										}}>
+										<option value="semanas">semanas</option>
+										<option value="meses">meses</option>
+										<option value='años'>años</option>
+									</FormControl>
+								</Col>
+							</FormGroup>
+							{this.state.error && <p className='error'>* Edad máxima: 5 años(60 meses)</p>}
 
-					<FormGroup controlId="formDepartment">
-						<Col sm={4}>
-							<ControlLabel>Procedencia</ControlLabel>
-						</Col>
-						<Col sm={4}>
-							<FormControl componentClass="select" placeholder="select">
-								<option value="Ancash">Ancash</option>
-								<option value="Apurimac">Apurimac</option>
-								<option value='Amazonas'>Amazonas</option>
-							</FormControl>
-						</Col>
-						<Col sm={4}>
-							<FormControl componentClass="select" placeholder="select">
-								<option value="semanas">Ancash</option>
-								<option value="meses">Apurimac</option>
-								<option value='años'>Amazonas</option>
-							</FormControl>
-						</Col>
-					</FormGroup>
+							<FormGroup controlId="formWeight" >
+								<Col sm={2} md={2} xs={2}>
+									<ControlLabel className='label'>Peso</ControlLabel>
+								</Col>
+								<Col sm={9} md={9} xs={9}>
+									<FormControl type="number" placeholder="Peso" onChange={e => {
+										model.info.weight = parseFloat(e.target.value)
+										check();
+									}} />
+								</Col>
+								<Col sm={1} md={1} xs={1}>
+									<p className='label'>Kg</p>
+								</Col>
+							</FormGroup>
 
-					<FormGroup controlId='formWeightBorn'>
-						<Col sm={6}>
-							<ControlLabel>¿Su peso fue adecuado al nacer?</ControlLabel>
-						</Col>
-						<Col sm={6}>
-							<Radio name='radioGroup1' value='SI' inline>SI</Radio>
-							<Radio name='radioGroup1' value='NO' inline>NO</Radio>
-						</Col>
-					</FormGroup>
+							<FormGroup controlId="formHb" >
+								<Col md={2} sm={2} xs={2}>
+									<ControlLabel className='label'>Hemoglobina</ControlLabel>
+								</Col>
+								<Col md={9} sm={9} xs={9}>
+									<FormControl type='number' placeholder='Hemoglobina'
+									onChange={e => {
+										model.info.hemoglobina = parseFloat(e.target.value)
+										check();
+									}} />
+								</Col>
+								<Col sm={1} md={1} xs={1}>
+									<p className='label'>gr/dl</p>
+								</Col>
+							</FormGroup>
+							<FormGroup controlId="formDepartment" >
+								<Col sm={2} md={2} xs={2}>
+									<ControlLabel className='label'>Procedencia</ControlLabel>
+								</Col>
+								<Col sm={5} md={5} xs={5}>
+									<FormControl componentClass="select" placeholder="select" onChange={e => {
+										this.setState({
+											dep: e.target.value
+										})
+									}}>
+										<option value="">Seleccione Departamento</option>
+										{Provincias.map((a, index) => {
+											return <option key={index} value={index}>{a.departamento}</option>
+										})}
 
-					<FormGroup controlId='formTimeBorn'>
-						<Col sm={6}>
-							<ControlLabel>¿Su naciemiento fue prematuro?</ControlLabel>
-						</Col>
-						<Col sm={6}>
-							<Radio name='radioGroup2' value='SI' inline>SI</Radio>
-							<Radio name='radioGroup2' value='NO' inline>NO</Radio>
-						</Col>
-					</FormGroup>
+									</FormControl>
+								</Col>
+								<Col sm={5} md={5} xs={5}>
+									<FormControl componentClass="select" placeholder="select"
+										disabled={!this.state.dep}
+										onChange={e => {
+											model.info.altura = parseInt(e.target.value);
+											console.log(model.info.altura)
+											check();
+										}}>
+										<option value="">Seleccione Provincia</option>
+										{this.state.dep && Provincias[this.state.dep].provincias.map((a, index) => {
+											return <option key={index} value={a.altura}>{a.provincias}</option>
+										})}
+									</FormControl>
+								</Col>
+							</FormGroup>
 
-					<FormGroup>
-						<Col smOffset={2} sm={10}>
-							<Button type="submit">
-								Diagnosticar
-        			</Button>
-						</Col>
-					</FormGroup>
-				</Form>
-			</Grid>
+							<FormGroup controlId='formWeightBorn' >
+								<Col sm={6} md={6} xs={6}>
+									<ControlLabel>¿Su peso fue adecuado al nacer?</ControlLabel>
+								</Col>
+								<Col sm={6} md={6} xs={6}>
+									<Radio name='radioGroup1' value='SI' inline onClick={pesoA}>SI</Radio>
+									<Radio name='radioGroup1' value='NO' inline onClick={pesoA}>NO</Radio>
+								</Col>
+							</FormGroup>
+
+							<FormGroup controlId='formTimeBorn' >
+								<Col sm={6} md={6} xs={6}>
+									<ControlLabel>¿Su naciemiento fue prematuro?</ControlLabel>
+								</Col>
+								<Col sm={6} md={6} xs={6}>
+									<Radio name='radioGroup2' value='SI' inline onClick={prem}>SI</Radio>
+									<Radio name='radioGroup2' value='NO' inline onClick={prem}>NO</Radio>
+								</Col>
+							</FormGroup>
+
+							<FormGroup>
+								<div style={{marginTop:'20px'}}>
+									{this.state.checkForm && !this.state.error ?
+										<NavLink className="btn btn-lg btn-block" to={"/result"}
+											onClick={() => model.getInfo()}
+										>
+											Diagnosticar
+									</NavLink>
+										:
+										<Button type="submit" bsSize="large"
+											disabled={!this.state.checkForm}
+											onClick={(event) => {
+												event.preventDefault();
+												model.getInfo();
+											}} block>
+											Diagnosticar
+							</Button>
+									}
+
+								</div>
+							</FormGroup>
+						</Form>
+					</Grid>
+				</div>
+			</div>
 		)
 	}
 }

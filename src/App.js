@@ -2,20 +2,39 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import FormDiagnostic from './Form.js'
+import Result from './result.js';
+import Home from './home.js';
+import {
+  BrowserRouter,
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom'
+
+const NotFound = (props) => {
+  return (
+    <div><h2> Error 404! </h2></div>
+  );
+}
 
 
 class App extends Component {
   render() {
+    const { model } = this.props;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        
-        <FormDiagnostic />
-      </div>
-    );
+      <BrowserRouter>
+
+        <Switch>
+          <Route path="/Hacknemia"
+            render={() => <Redirect to={'/home'} />} />
+          <Route path="/home" render={() => <Home />} />
+          <Route path="/form" render={() => <FormDiagnostic model={model} />} />
+          <Route path="/result" render={() => <Result model={model} />} />
+          <Route component={Home} />
+
+        </Switch>
+      </BrowserRouter>)
+
   }
 }
 
