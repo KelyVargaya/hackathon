@@ -46,6 +46,11 @@ class FormDiagnostic extends Component {
 						error: model.info.age > 60
 					})
 					break;
+				default:
+					this.setState({
+						error: !model.info.age
+					})
+					break;
 			}
 		}
 		return (
@@ -59,15 +64,15 @@ class FormDiagnostic extends Component {
 						<div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right buto" >
 							<a className="anchor" href="">¿Como Funciona?</a>
 							<a className="btn btn-default anchor"
-							href='http://tabfacil.com/temporal/www.hacknemia.com/?page=mapa'>
-                                Ver Mapa
+								href='http://tabfacil.com/temporal/www.hacknemia.com/?page=mapa'>
+								Ver Mapa
                             </a>
 						</div>
 					</div>
 				</div>
 				<div className="formulario">
 					<div>
-						<NavLink to="/home" style={{display:'flex', alignItems:'center', marginLeft:'20px'}}>
+						<NavLink to="/home" style={{ display: 'flex', alignItems: 'center', marginLeft: '20px' }}>
 							<i className="material-icons">keyboard_arrow_left</i>
 							<span>Return</span>
 						</NavLink>
@@ -83,7 +88,6 @@ class FormDiagnostic extends Component {
 									<FormControl type="text" placeholder="Nombre del infante" onChange={e => {
 										model.info.name = e.target.value
 										check();
-										findError();
 									}} />
 								</Col>
 							</FormGroup>
@@ -97,6 +101,7 @@ class FormDiagnostic extends Component {
 										onChange={e => {
 											model.info.age = parseInt(e.target.value)
 											check();
+											findError();
 										}} />
 								</Col>
 								<Col md={5} sm={5} xs={5}>
@@ -135,10 +140,10 @@ class FormDiagnostic extends Component {
 								</Col>
 								<Col md={9} sm={9} xs={9}>
 									<FormControl type='number' placeholder='Hemoglobina'
-									onChange={e => {
-										model.info.hemoglobina = parseFloat(e.target.value)
-										check();
-									}} />
+										onChange={e => {
+											model.info.hemoglobina = parseFloat(e.target.value)
+											check();
+										}} />
 								</Col>
 								<Col sm={1} md={1} xs={1}>
 									<p className='label'>gr/dl</p>
@@ -166,7 +171,6 @@ class FormDiagnostic extends Component {
 										disabled={!this.state.dep}
 										onChange={e => {
 											model.info.altura = parseInt(e.target.value);
-											console.log(model.info.altura)
 											check();
 										}}>
 										<option value="">Seleccione Provincia</option>
@@ -198,7 +202,7 @@ class FormDiagnostic extends Component {
 							</FormGroup>
 
 							<FormGroup>
-								<div style={{marginTop:'20px'}}>
+								<div style={{ marginTop: '20px' }}>
 									{this.state.checkForm && !this.state.error ?
 										<NavLink className="btn btn-lg btn-block" to={"/result"}
 											onClick={() => model.getInfo()}
