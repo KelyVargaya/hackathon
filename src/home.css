@@ -8,14 +8,17 @@
 .btn-login {
   margin-top: 350px;
 }
-.btn {
-	color:white;
-    background: #B71C1C;
-    border: 1px solid grey;
-    border-radius: 30px;
+
+.btnMapa{
+    margin-top: 15px;
     font-size: 13pt;
-    padding: 10px 40px 10px 40px;
-	font-family: 'Courgette', cursive;
+    margin-left: 10px;
+}
+.btnMapa:hover{
+    background: #D50000;
+    border: 1px;
+    border-radius: 30px;
+    color: #FFFFFF;
 }
 
 .login-enviar {
@@ -67,27 +70,21 @@
     font-family: 'Courgette', cursive;
 }
 
-@media screen and (max-width: 699px) and (min-width: 520px) {
-    .logo{
-       width: 150px;
-    }
-}
-
-.logo{
-       width: 200px;
-       margin: 0 auto;
-       
-    }
-
 .menu{
     background: white;
-    text-align: center;
+    margin-bottom: 0px;
     box-shadow: 4px 5px 10px black;
-    position: fixed;
     width: 100%;
-    z-index: 2000;
+    color: black;
     font-family: 'Courgette', cursive;
+   
 }
+
+.brand{
+    padding: 0px;
+    height: 93px;
+}
+
 .log{
     text-align: left;
     font-family: 'Courgette', cursive;
@@ -103,23 +100,23 @@ a{
     margin-top: 170px;
     font-family: 'Courgette', cursive;
 }
-.funcionalidad h1{
+.functionality h1{
     color: #D50000;
     font-family: 'Courgette', cursive;
 }
 
-.funcion{
+.functionality{
     margin-top: 80px;
     font-family: 'Courgette', cursive;
 }
 
-.funcion p{
+.functionality p{
     font-weight: bold;
     font-family: 'Courgette', cursive;
     font-size: 20px;
 }
 
-.funcionalidad img {
+.functionality img {
     margin: 0 auto;
     width: 50%;
     font-family: 'Courgette', cursive;
@@ -130,7 +127,7 @@ a{
     font-family: 'Courgette', cursive;
 }
 
-.pasos{
+.steps{
     margin-top: 40px;
     margin-bottom: 40px;
 }
