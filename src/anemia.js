@@ -19,7 +19,7 @@ function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso, pesoNacer, al
             edad = edad * 12;
             break;
     }
-    if(edad<=36 && edad){
+    if (edad <= 36 && edad) {
         let resultado = false;
         let diagnostico = '';
         if (edad_semanas) {
@@ -37,7 +37,7 @@ function diagnostico(condicion, edad, tipoEdad, hemoglobina, peso, pesoNacer, al
                 resultado = hemoglobina < 9.5;
             } else if (edad >= 6 && edad <= 60) {
                 resultado = hemoglobina < 11;
-    
+
             }
         }
         diagnostico = resultado ? 'anemia' : 'sin anemia';
@@ -119,8 +119,9 @@ function tratamiento(diagnostico, peso, pesoNacer, edad) {
                 }
             }
         }
-        return [medicina.toUpperCase(),`Tomar ${cantidadDia} ${medicina == 'jarabe' ? 'cdtas' : medicina} al día`,
-                `Requiere ${cantidadMes} ${medicina == 'sobre(s)' ? 'caja(s)' : 'frasco(s)'} al mes`]
+        let resultado = cantidadDia && cantidadMes ?
+            [medicina.toUpperCase(), `Tomar ${cantidadDia} ${medicina == 'jarabe' ? 'cdtas' : medicina} al día`,
+            `Requiere ${cantidadMes} ${medicina == 'sobre(s)' ? 'caja(s)' : 'frasco(s)'} al mes`] : 'Datos incoherentes';
     }
 }
 export default diagnostico;
