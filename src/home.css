@@ -14,11 +14,17 @@
    font-size: 13pt;
    margin-left: 10px;
 }
+
+.btnMapa{
+    margin-top: 15px;
+    font-size: 13pt;
+    margin-left: 10px;
+}
 .btnMapa:hover{
-   background: #D50000;
-   border: 1px;
-   border-radius: 30px;
-   color: #FFFFFF;
+    background: #D50000;
+    border: 1px;
+    border-radius: 30px;
+    color: #FFFFFF;
 }
 
 .login-enviar {
@@ -71,18 +77,18 @@
 }
 
 .menu{
-   background: white;
-   margin-bottom: 0px;
-   box-shadow: 4px 5px 10px black;
-   width: 100%;
-   color: black;
-   font-family: 'Courgette', cursive;
-  
+    background: white;
+    margin-bottom: 0px;
+    box-shadow: 4px 5px 10px black;
+    width: 100%;
+    color: black;
+    font-family: 'Courgette', cursive;
+   
 }
 
 .brand{
-   padding: 0px;
-   height: 93px;
+    padding: 0px;
+    height: 93px;
 }
 
 .log{
@@ -101,25 +107,25 @@ a{
    font-family: 'Courgette', cursive;
 }
 .functionality h1{
-   color: #D50000;
-   font-family: 'Courgette', cursive;
+    color: #D50000;
+    font-family: 'Courgette', cursive;
 }
 
 .functionality{
-   margin-top: 80px;
-   font-family: 'Courgette', cursive;
+    margin-top: 80px;
+    font-family: 'Courgette', cursive;
 }
 
 .functionality p{
-   font-weight: bold;
-   font-family: 'Courgette', cursive;
-   font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
 }
 
 .functionality img {
-   margin: 0 auto;
-   width: 50%;
-   font-family: 'Courgette', cursive;
+    margin: 0 auto;
+    width: 50%;
+    font-family: 'Courgette', cursive;
 }
 
 .play img{
@@ -128,6 +134,6 @@ a{
 }
 
 .steps{
-   margin-top: 40px;
-   margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }

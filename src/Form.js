@@ -76,31 +76,7 @@ class FormDiagnostic extends Component {
 		}
 		return (
 			<div>
-<<<<<<< HEAD
-				<div className="container-fluid cursiva">
-					<div className="row menu">
-						<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
-							<img className="logo img-responsive" src={logo} alt="" />
-						</div>
-
-						<div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right buto" >
-							<a className="anchor" href="">¿Como Funciona?</a>
-							<a className="btn btn-default anchor"
-								href='http://tabfacil.com/temporal/www.hacknemia.com/?page=mapa'>
-								Ver Mapa
-                            </a>
-						</div>
-					</div>
-				</div>
-				<div className="formulario">
-					<div>
-						<NavLink to="/home" style={{ display: 'flex', alignItems: 'center', marginLeft: '20px' }}>
-							<i className="material-icons">keyboard_arrow_left</i>
-							<span>Return</span>
-						</NavLink>
-=======
 				<HeaderApp />
->>>>>>> c95fefe50e1bc880936c8d8f1238446a663a326b
 
 				<div>
 					<NavLink to="/home" style={{ display: 'flex', alignItems: 'center', marginLeft: '20px' }}>
