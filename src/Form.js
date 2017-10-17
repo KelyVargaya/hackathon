@@ -4,11 +4,32 @@ import './form.css';
 import './home.css';
 import Result from './result.js';
 import logo from './img/logo.png'
-import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio } from 'react-bootstrap';
+import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio, Nav, Navbar, NavItem } from 'react-bootstrap';
 import {
 	NavLink
 } from 'react-router-dom'
 import Provincias from './provincias.js';
+
+class HeaderApp extends Component {
+	render() {
+		return (
+			<Navbar className="menu">
+				<Navbar.Header >
+					<Navbar.Brand className="brand">
+						<img className="img-responsive" src={logo} alt="" />
+					</Navbar.Brand>
+					<Navbar.Toggle />
+				</Navbar.Header>
+				<Navbar.Collapse>
+					<Nav pullRight>
+						<NavItem className="btnMapa" eventKey={1}><NavLink to="/home">¿Como Funciona?</NavLink></NavItem>
+						<NavItem className="btnMapa" eventKey={2} href="#">Ver Mapa</NavItem>
+					</Nav>
+				</Navbar.Collapse>
+			</Navbar>
+		);
+	}
+}
 
 class FormDiagnostic extends Component {
 	constructor(props) {
@@ -50,30 +71,14 @@ class FormDiagnostic extends Component {
 		}
 		return (
 			<div>
-				<div className="container-fluid cursiva">
-					<div className="row menu">
-						<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
-							<img className="logo img-responsive" src={logo} alt="" />
-						</div>
+				<HeaderApp />
 
-						<div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right buto" >
-							<a className="anchor" href="">¿Como Funciona?</a>
-							<a className="btn btn-default anchor"
-							href='http://tabfacil.com/temporal/www.hacknemia.com/?page=mapa'>
-                                Ver Mapa
-                            </a>
-						</div>
-					</div>
-				</div>
-				<div className="formulario">
-					<div>
-						<NavLink to="/home" style={{display:'flex', alignItems:'center', marginLeft:'20px'}}>
-							<i className="material-icons">keyboard_arrow_left</i>
-							<span>Return</span>
-						</NavLink>
-
-					</div>
-					<Grid>
+				<div>
+					<NavLink to="/home" style={{ display: 'flex', alignItems: 'center', marginLeft: '20px' }}>
+						<i className="material-icons">keyboard_arrow_left</i>
+						<span>Return</span>
+					</NavLink>
+					<Grid className="formulario">
 						<Form horizontal>
 							<FormGroup controlId="formName">
 								<Col md={2} sm={2} xs={2}>
@@ -118,7 +123,7 @@ class FormDiagnostic extends Component {
 								<Col sm={2} md={2} xs={2}>
 									<ControlLabel className='label'>Peso</ControlLabel>
 								</Col>
-								<Col sm={9} md={9} xs={9}>
+								<Col sm={7} md={9} xs={7}>
 									<FormControl type="number" placeholder="Peso" onChange={e => {
 										model.info.weight = parseFloat(e.target.value)
 										check();
@@ -131,16 +136,16 @@ class FormDiagnostic extends Component {
 
 							<FormGroup controlId="formHb" >
 								<Col md={2} sm={2} xs={2}>
-									<ControlLabel className='label'>Hemoglobina</ControlLabel>
+									<ControlLabel className='label'>Hb</ControlLabel>
 								</Col>
-								<Col md={9} sm={9} xs={9}>
+								<Col md={8} sm={7} xs={7}>
 									<FormControl type='number' placeholder='Hemoglobina'
-									onChange={e => {
-										model.info.hemoglobina = parseFloat(e.target.value)
-										check();
-									}} />
+										onChange={e => {
+											model.info.hemoglobina = parseFloat(e.target.value)
+											check();
+										}} />
 								</Col>
-								<Col sm={1} md={1} xs={1}>
+								<Col sm={2} md={2} xs={2}>
 									<p className='label'>gr/dl</p>
 								</Col>
 							</FormGroup>
@@ -198,13 +203,13 @@ class FormDiagnostic extends Component {
 							</FormGroup>
 
 							<FormGroup>
-								<div style={{marginTop:'20px'}}>
+								<div style={{ marginTop: '20px' }}>
 									{this.state.checkForm && !this.state.error ?
 										<NavLink className="btn btn-lg btn-block" to={"/result"}
 											onClick={() => model.getInfo()}
 										>
 											Diagnosticar
-									</NavLink>
+										</NavLink>
 										:
 										<Button type="submit" bsSize="large"
 											disabled={!this.state.checkForm}
@@ -213,9 +218,8 @@ class FormDiagnostic extends Component {
 												model.getInfo();
 											}} block>
 											Diagnosticar
-							</Button>
+										</Button>
 									}
-
 								</div>
 							</FormGroup>
 						</Form>
