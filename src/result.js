@@ -36,17 +36,9 @@ const Result = ({ model }) => {
 				model.info[a] = '';
 			}
 		})
-		console.log(model.info);
 		/*	
 			href='http://tabfacil.com/temporal/www.hacknemia.com/?page=mapa'
 
-			<div className="img-circle circle"><h2>{model.diagnost[0]}</h2></div>
-						<div className="text-center tipo"><h3>{model.diagnost[1].toUpperCase()}</h3></div>
-						<div className="receta text-center">
-							<h3 style={{ marginTop: '0' }}>Receta Médica</h3>
-							<p>{model.diagnost[2][0]}</p>
-							<p>{model.diagnost[2][1]}</p>
-							<p>{model.diagnost[2][2]}</p>
 			*/
 	}
 	return (
@@ -57,13 +49,13 @@ const Result = ({ model }) => {
 				<div className="form">
 					<div className="text-center contenido">
 						<p>CANTIDAD DE HEMOGLOBINA</p>
-						<div className="img-circle circle"><h2>fdg</h2></div>
-						<div className="text-center tipo"><h3>ghfg</h3></div>
+						<div className="img-circle circle"><h2>{model.diagnost[0]}</h2></div>
+						<div className="text-center tipo"><h3>{model.diagnost[1].toUpperCase()}</h3></div>
 						<div className="receta text-center">
 							<h3 style={{ marginTop: '0' }}>Receta Médica</h3>
-							<p>dsf</p>
-							<p>dsf</p>
-							<p>dsf</p>
+							<p>{model.diagnost[2][0]}</p>
+							<p>{model.diagnost[2][1]}</p>
+							<p>{model.diagnost[2][2]}</p>
 						</div>
 					</div>
 				</div>

@@ -4,7 +4,7 @@ import './form.css';
 import './home.css';
 import Result from './result.js';
 import logo from './img/logo.png'
-import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio, Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Form, FormGroup, InputGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio, Nav, Navbar, NavItem } from 'react-bootstrap';
 import {
 	NavLink
 } from 'react-router-dom'
@@ -86,10 +86,10 @@ class FormDiagnostic extends Component {
 					<Grid className="formulario">
 						<Form horizontal>
 							<FormGroup controlId="formName">
-								<Col md={2} sm={2} xs={2}>
+								<Col md={2} sm={2} >
 									<ControlLabel className='label'>Nombre</ControlLabel>
 								</Col>
-								<Col md={10} sm={10} xs={10}>
+								<Col md={10} sm={10} >
 									<FormControl type="text" placeholder="Nombre del infante" onChange={e => {
 										model.info.name = e.target.value
 										check();
@@ -98,10 +98,10 @@ class FormDiagnostic extends Component {
 							</FormGroup>
 
 							<FormGroup controlId="formAge" validationState={this.state.error ? 'error' : null}>
-								<Col md={2} sm={2} xs={2}>
+								<Col md={2} sm={2} >
 									<ControlLabel className='label'>Edad</ControlLabel>
 								</Col>
-								<Col md={5} sm={5} xs={5}>
+								<Col md={5} sm={5} >
 									<FormControl type='number' placeholder='Ingrese la edad del infante'
 										onChange={e => {
 											model.info.age = parseInt(e.target.value)
@@ -109,7 +109,7 @@ class FormDiagnostic extends Component {
 											findError();
 										}} />
 								</Col>
-								<Col md={5} sm={5} xs={5}>
+								<Col md={5} sm={5} >
 									<FormControl componentClass="select" placeholder="select"
 										disabled={!model.info.age}
 										onChange={e => {
@@ -125,40 +125,44 @@ class FormDiagnostic extends Component {
 							{this.state.error && <p className='error'>* Edad máxima: 5 años(60 meses)</p>}
 
 							<FormGroup controlId="formWeight" >
-								<Col sm={2} md={2} xs={2}>
+								<Col sm={2} md={2} >
 									<ControlLabel className='label'>Peso</ControlLabel>
 								</Col>
-								<Col sm={7} md={9} xs={7}>
-									<FormControl type="number" placeholder="Peso" onChange={e => {
-										model.info.weight = parseFloat(e.target.value)
-										check();
-									}} />
+								<Col sm={10} md={10} >
+									<InputGroup>
+										<FormControl type="number" placeholder="Peso" onChange={e => {
+											model.info.weight = parseFloat(e.target.value)
+											check();
+										}} />
+										<InputGroup.Addon>Kg</InputGroup.Addon>
+									</InputGroup>
+
 								</Col>
-								<Col sm={1} md={1} xs={1}>
-									<p className='label'>Kg</p>
-								</Col>
+
 							</FormGroup>
 
 							<FormGroup controlId="formHb" >
-								<Col md={2} sm={2} xs={2}>
+								<Col md={2} sm={2} >
 									<ControlLabel className='label'>Hb</ControlLabel>
 								</Col>
-								<Col md={8} sm={7} xs={7}>
-									<FormControl type='number' placeholder='Hemoglobina'
-										onChange={e => {
-											model.info.hemoglobina = parseFloat(e.target.value)
-											check();
-										}} />
+								<Col md={10} sm={10} >
+									<InputGroup>
+										<FormControl type='number' placeholder='Hemoglobina'
+											onChange={e => {
+												model.info.hemoglobina = parseFloat(e.target.value)
+												check();
+											}} />
+										<InputGroup.Addon>gr/dl</InputGroup.Addon>
+									</InputGroup>
+
 								</Col>
-								<Col sm={2} md={2} xs={2}>
-									<p className='label'>gr/dl</p>
-								</Col>
+
 							</FormGroup>
 							<FormGroup controlId="formDepartment" >
-								<Col sm={2} md={2} xs={2}>
+								<Col sm={2} md={2} >
 									<ControlLabel className='label'>Procedencia</ControlLabel>
 								</Col>
-								<Col sm={5} md={5} xs={5}>
+								<Col sm={5} md={5} >
 									<FormControl componentClass="select" placeholder="select" onChange={e => {
 										this.setState({
 											dep: e.target.value
@@ -171,7 +175,7 @@ class FormDiagnostic extends Component {
 
 									</FormControl>
 								</Col>
-								<Col sm={5} md={5} xs={5}>
+								<Col sm={5} md={5} >
 									<FormControl componentClass="select" placeholder="select"
 										disabled={!this.state.dep}
 										onChange={e => {
@@ -187,20 +191,20 @@ class FormDiagnostic extends Component {
 							</FormGroup>
 
 							<FormGroup controlId='formWeightBorn' >
-								<Col sm={6} md={6} xs={6}>
+								<Col sm={6} md={6} >
 									<ControlLabel>¿Su peso fue adecuado al nacer?</ControlLabel>
 								</Col>
-								<Col sm={6} md={6} xs={6}>
+								<Col sm={6} md={6} >
 									<Radio name='radioGroup1' value='SI' inline onClick={pesoA}>SI</Radio>
 									<Radio name='radioGroup1' value='NO' inline onClick={pesoA}>NO</Radio>
 								</Col>
 							</FormGroup>
 
 							<FormGroup controlId='formTimeBorn' >
-								<Col sm={6} md={6} xs={6}>
+								<Col sm={6} md={6} >
 									<ControlLabel>¿Su naciemiento fue prematuro?</ControlLabel>
 								</Col>
-								<Col sm={6} md={6} xs={6}>
+								<Col sm={6} md={6} >
 									<Radio name='radioGroup2' value='SI' inline onClick={prem}>SI</Radio>
 									<Radio name='radioGroup2' value='NO' inline onClick={prem}>NO</Radio>
 								</Col>
@@ -211,6 +215,7 @@ class FormDiagnostic extends Component {
 									{this.state.checkForm && !this.state.error ?
 										<NavLink className="btn btn-lg btn-block" to={"/result"}
 											onClick={() => model.getInfo()}
+											style={{backgroundColor:'#df2727', color:'white'}}
 										>
 											Diagnosticar
 										</NavLink>

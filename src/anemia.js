@@ -121,7 +121,8 @@ function tratamiento(diagnostico, peso, pesoNacer, edad) {
         }
         let resultado = cantidadDia && cantidadMes ?
             [medicina.toUpperCase(), `Tomar ${cantidadDia} ${medicina == 'jarabe' ? 'cdtas' : medicina} al día`,
-            `Requiere ${cantidadMes} ${medicina == 'sobre(s)' ? 'caja(s)' : 'frasco(s)'} al mes`] : 'Datos incoherentes';
+            `Requiere ${cantidadMes} ${medicina == 'sobre(s)' ? 'caja(s)' : 'frasco(s)'} al mes`] : ['Datos incoherentes','',''];
+        return resultado;
     }
 }
 export default diagnostico;
