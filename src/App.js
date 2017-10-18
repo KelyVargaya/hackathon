@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import FormDiagnostic from './Form.js'
 import Result from './result.js';
@@ -11,7 +10,7 @@ import {
   Redirect
 } from 'react-router-dom'
 import MediaQuery from 'react-responsive';
-
+import LogoApp from './portadaMovil.js';
 
 const Apli = ({ model }) => {
   return (
@@ -29,11 +28,8 @@ const Apli = ({ model }) => {
     </BrowserRouter>
   );
 }
-class App extends Component {
-  render() {
-    const { model } = this.props;
-    return (
-      <div>
+
+/*<div>
         <MediaQuery minDeviceWidth={1224}>
           <Apli model={model} />
 
@@ -47,9 +43,16 @@ class App extends Component {
           </MediaQuery>
         </MediaQuery>
         <MediaQuery maxDeviceWidth={1224}>
-          <div>You are a tablet or mobile phone</div>
+          <LogoApp />
         </MediaQuery>
 
+      </div>*/
+class App extends Component {
+  render() {
+    const { model } = this.props;
+    return (
+      <div>
+        <Apli model={model} />
       </div>
 
     )

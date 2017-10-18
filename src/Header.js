@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Nav, Navbar, NavItem } from 'react-bootstrap';
+import logo from './img/logo.png';
+import {
+	NavLink
+} from 'react-router-dom'
 
 class HeaderApp extends Component {
 	render() {

@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import './home.css';
 import Result from './result.js';
-import logo from './img/logo.png';
 import { InputAge, InputChoice, InputName, InputPlace, InputUnidad } from './Inputs';
-import { Form, Grid } from 'react-bootstrap';
+import { Form, Grid, FormGroup, Button } from 'react-bootstrap';
 import {
 	NavLink
 } from 'react-router-dom'
@@ -79,7 +78,7 @@ class FormDiagnostic extends Component {
 					<Grid className="formulario">
 						<Form horizontal>
 							<InputName model={model} funcion={check} />
-							<InputAge model={model} check={check} error={findError} componentClass={this.state.error} />
+							<InputAge model={model} check={check} error={findError} comprobar={this.state.error} />
 							<InputUnidad label={'Peso'} unidad={'Kg'} funcion={saveWeight} />
 							<InputUnidad label={'Hb'} unidad={'gr/dl'} funcion={saveHb} />
 							<InputPlace model={model} check={check} place={this.state.dep} funcion={changeDep} />
