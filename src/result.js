@@ -27,6 +27,7 @@ class HeaderApp extends Component {
 		);
 	}
 }
+
 const Result = ({ model }) => {
 	const reiniciar = () => {
 		Object.keys(model.info).filter(a => a != 'ageType').map(a => {
@@ -36,14 +37,10 @@ const Result = ({ model }) => {
 				model.info[a] = '';
 			}
 		})
-		/*	
-			href='http://tabfacil.com/temporal/www.hacknemia.com/?page=mapa'
-
-			*/
+		/*	href='http://tabfacil.com/temporal/www.hacknemia.com/?page=mapa' */
 	}
-	return (
-		<div>
-			<HeaderApp />
+	const Diagnostic = () => {
+		return (
 			<Grid className='fomulario'>
 				<h1 style={{ color: 'black', marginTop: '0' }} className='text-center '>Resultado</h1>
 				<div className="form">
@@ -60,6 +57,12 @@ const Result = ({ model }) => {
 					</div>
 				</div>
 			</Grid>
+		)
+	}
+	return (
+		<div>
+			<HeaderApp />
+			<div>{Diagnostic()}</div>
 		</div>
 	);
 }
