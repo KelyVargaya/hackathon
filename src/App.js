@@ -10,31 +10,49 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom'
+import MediaQuery from 'react-responsive';
 
-const NotFound = (props) => {
+
+const Apli = ({ model }) => {
   return (
-    <div><h2> Error 404! </h2></div>
+    <BrowserRouter>
+
+      <Switch>
+        <Route path="/Hacknemia"
+          render={() => <Redirect to={'/home'} />} />
+        <Route path="/home" render={() => <Home />} />
+        <Route path="/form" render={() => <FormDiagnostic model={model} />} />
+        <Route path="/result" render={() => <Result model={model} />} />
+        <Route component={Home} />
+
+      </Switch>
+    </BrowserRouter>
   );
 }
-
-
 class App extends Component {
   render() {
     const { model } = this.props;
     return (
-      <BrowserRouter>
+      <div>
+        <MediaQuery minDeviceWidth={1224}>
+          <Apli model={model} />
 
-        <Switch>
-          <Route path="/Hacknemia"
-            render={() => <Redirect to={'/home'} />} />
-          <Route path="/home" render={() => <Home />} />
-          <Route path="/form" render={() => <FormDiagnostic model={model} />} />
-          <Route path="/result" render={() => <Result model={model} />} />
-          <Route component={Home} />
+          <MediaQuery minDeviceWidth={1824}>
+            <Apli model={model} />
 
-        </Switch>
-      </BrowserRouter>)
+          </MediaQuery>
+          <MediaQuery maxWidth={1224}>
+            <Apli model={model} />
 
+          </MediaQuery>
+        </MediaQuery>
+        <MediaQuery maxDeviceWidth={1224}>
+          <div>You are a tablet or mobile phone</div>
+        </MediaQuery>
+
+      </div>
+
+    )
   }
 }
 
