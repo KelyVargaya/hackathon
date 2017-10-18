@@ -5,30 +5,10 @@ import {
 	NavLink
 } from 'react-router-dom'
 import logo from './img/logo.png'
-import { Form, FormGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio, Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Grid } from 'react-bootstrap';
+import HeaderApp from './Header.js';
 
-class HeaderApp extends Component {
-	render() {
-		return (
-			<Navbar className="menu">
-				<Navbar.Header >
-					<Navbar.Brand className="brand">
-						<img className="img-responsive" src={logo} alt="" />
-					</Navbar.Brand>
-					<Navbar.Toggle />
-				</Navbar.Header>
-				<Navbar.Collapse>
-					<Nav pullRight>
-						<NavItem className="btnMapa" eventKey={1}><NavLink to="/home">¿Como Funciona?</NavLink></NavItem>
-						<NavItem className="btnMapa" eventKey={2} href="#">Ver Mapa</NavItem>
-					</Nav>
-				</Navbar.Collapse>
-			</Navbar>
-		);
-	}
-}
-
-const PrevPage = ({model}) => {
+const PrevPage = ({ model }) => {
 	const reiniciar = () => {
 		Object.keys(model.info).filter(a => a != 'ageType').map(a => {
 			if (a === 'ageType') {
@@ -71,7 +51,7 @@ const Result = ({ model }) => {
 	return (
 		<div>
 			<HeaderApp />
-			<PrevPage model={model}/>
+			<PrevPage model={model} />
 			<Diagnostic model={model} />
 		</div>
 	);

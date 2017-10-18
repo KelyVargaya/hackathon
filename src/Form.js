@@ -4,31 +4,12 @@ import './home.css';
 import Result from './result.js';
 import logo from './img/logo.png';
 import { InputAge, InputChoice, InputName, InputPlace, InputUnidad } from './Inputs';
-import { Form, FormGroup, InputGroup, FormControl, Col, Grid, Row, ControlLabel, Button, Radio, Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Form, Grid } from 'react-bootstrap';
 import {
 	NavLink
 } from 'react-router-dom'
+import HeaderApp from './Header.js';
 
-class HeaderApp extends Component {
-	render() {
-		return (
-			<Navbar className="menu">
-				<Navbar.Header >
-					<Navbar.Brand className="brand">
-						<img className="img-responsive" src={logo} alt="" />
-					</Navbar.Brand>
-					<Navbar.Toggle />
-				</Navbar.Header>
-				<Navbar.Collapse>
-					<Nav pullRight>
-						<NavItem className="btnMapa" eventKey={1}><NavLink to="/home">¿Como Funciona?</NavLink></NavItem>
-						<NavItem className="btnMapa" eventKey={2} href="#">Ver Mapa</NavItem>
-					</Nav>
-				</Navbar.Collapse>
-			</Navbar>
-		);
-	}
-}
 
 class FormDiagnostic extends Component {
 	constructor(props) {
